@@ -1,0 +1,3131 @@
+[
+  {
+    "id": "tame-impala-the-less-i-know-the-better",
+    "title": "The Less I Know the Better",
+    "artist": "Tame Impala",
+    "artist_id": "tame-impala",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.69,
+      "valence": 0.56,
+      "acousticness": 0.38,
+      "tempo": 118
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tame-impala-let-it-happen",
+    "title": "Let It Happen",
+    "artist": "Tame Impala",
+    "artist_id": "tame-impala",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.68,
+      "valence": 0.51,
+      "acousticness": 0.34,
+      "tempo": 119
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tame-impala-borderline",
+    "title": "Borderline",
+    "artist": "Tame Impala",
+    "artist_id": "tame-impala",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.54,
+      "valence": 0.61,
+      "acousticness": 0.36,
+      "tempo": 123
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tame-impala-eventually",
+    "title": "Eventually",
+    "artist": "Tame Impala",
+    "artist_id": "tame-impala",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.52,
+      "valence": 0.4,
+      "acousticness": 0.36,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "arctic-monkeys-do-i-wanna-know",
+    "title": "Do I Wanna Know?",
+    "artist": "Arctic Monkeys",
+    "artist_id": "arctic-monkeys",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.58,
+      "valence": 0.41,
+      "acousticness": 0.41,
+      "tempo": 110
+    },
+    "preview_url": null
+  },
+  {
+    "id": "arctic-monkeys-505",
+    "title": "505",
+    "artist": "Arctic Monkeys",
+    "artist_id": "arctic-monkeys",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.53,
+      "valence": 0.42,
+      "acousticness": 0.4,
+      "tempo": 113
+    },
+    "preview_url": null
+  },
+  {
+    "id": "arctic-monkeys-r-u-mine",
+    "title": "R U Mine?",
+    "artist": "Arctic Monkeys",
+    "artist_id": "arctic-monkeys",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.57,
+      "valence": 0.58,
+      "acousticness": 0.35,
+      "tempo": 109
+    },
+    "preview_url": null
+  },
+  {
+    "id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
+    "title": "Why'd You Only Call Me When You're High?",
+    "artist": "Arctic Monkeys",
+    "artist_id": "arctic-monkeys",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.56,
+      "valence": 0.51,
+      "acousticness": 0.4,
+      "tempo": 113
+    },
+    "preview_url": null
+  },
+  {
+    "id": "vampire-weekend-a-punk",
+    "title": "A-Punk",
+    "artist": "Vampire Weekend",
+    "artist_id": "vampire-weekend",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.6,
+      "valence": 0.51,
+      "acousticness": 0.2,
+      "tempo": 133
+    },
+    "preview_url": null
+  },
+  {
+    "id": "vampire-weekend-harmony-hall",
+    "title": "Harmony Hall",
+    "artist": "Vampire Weekend",
+    "artist_id": "vampire-weekend",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.7,
+      "valence": 0.43,
+      "acousticness": 0.4,
+      "tempo": 122
+    },
+    "preview_url": null
+  },
+  {
+    "id": "vampire-weekend-this-life",
+    "title": "This Life",
+    "artist": "Vampire Weekend",
+    "artist_id": "vampire-weekend",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.7,
+      "valence": 0.46,
+      "acousticness": 0.4,
+      "tempo": 132
+    },
+    "preview_url": null
+  },
+  {
+    "id": "vampire-weekend-step",
+    "title": "Step",
+    "artist": "Vampire Weekend",
+    "artist_id": "vampire-weekend",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.5,
+      "valence": 0.54,
+      "acousticness": 0.27,
+      "tempo": 120
+    },
+    "preview_url": null
+  },
+  {
+    "id": "the-1975-somebody-else",
+    "title": "Somebody Else",
+    "artist": "The 1975",
+    "artist_id": "the-1975",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.62,
+      "valence": 0.39,
+      "acousticness": 0.28,
+      "tempo": 121
+    },
+    "preview_url": null
+  },
+  {
+    "id": "the-1975-robbers",
+    "title": "Robbers",
+    "artist": "The 1975",
+    "artist_id": "the-1975",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.67,
+      "valence": 0.53,
+      "acousticness": 0.33,
+      "tempo": 132
+    },
+    "preview_url": null
+  },
+  {
+    "id": "the-1975-chocolate",
+    "title": "Chocolate",
+    "artist": "The 1975",
+    "artist_id": "the-1975",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.63,
+      "valence": 0.45,
+      "acousticness": 0.25,
+      "tempo": 124
+    },
+    "preview_url": null
+  },
+  {
+    "id": "phoenix-1901",
+    "title": "1901",
+    "artist": "Phoenix",
+    "artist_id": "phoenix",
+    "genres": [
+      "indie"
+    ],
+    "era": "2000s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.71,
+      "valence": 0.51,
+      "acousticness": 0.31,
+      "tempo": 125
+    },
+    "preview_url": null
+  },
+  {
+    "id": "phoenix-lisztomania",
+    "title": "Lisztomania",
+    "artist": "Phoenix",
+    "artist_id": "phoenix",
+    "genres": [
+      "indie"
+    ],
+    "era": "2000s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.57,
+      "valence": 0.61,
+      "acousticness": 0.34,
+      "tempo": 117
+    },
+    "preview_url": null
+  },
+  {
+    "id": "mac-demarco-chamber-of-reflection",
+    "title": "Chamber of Reflection",
+    "artist": "Mac DeMarco",
+    "artist_id": "mac-demarco",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.51,
+      "valence": 0.39,
+      "acousticness": 0.26,
+      "tempo": 124
+    },
+    "preview_url": null
+  },
+  {
+    "id": "mac-demarco-my-kind-of-woman",
+    "title": "My Kind of Woman",
+    "artist": "Mac DeMarco",
+    "artist_id": "mac-demarco",
+    "genres": [
+      "indie"
+    ],
+    "era": "2010s",
+    "moods": [
+      "dreamy",
+      "melancholic"
+    ],
+    "audio_features": {
+      "energy": 0.57,
+      "valence": 0.5,
+      "acousticness": 0.24,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "king-gizzard-the-lizard-wizard-rattlesnake",
+    "title": "Rattlesnake",
+    "artist": "King Gizzard & the Lizard Wizard",
+    "artist_id": "king-gizzard-the-lizard-wizard",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.6,
+      "valence": 0.5,
+      "acousticness": 0.26,
+      "tempo": 129
+    },
+    "preview_url": null
+  },
+  {
+    "id": "king-gizzard-the-lizard-wizard-robot-stop",
+    "title": "Robot Stop",
+    "artist": "King Gizzard & the Lizard Wizard",
+    "artist_id": "king-gizzard-the-lizard-wizard",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.67,
+      "valence": 0.55,
+      "acousticness": 0.33,
+      "tempo": 110
+    },
+    "preview_url": null
+  },
+  {
+    "id": "king-gizzard-the-lizard-wizard-the-river",
+    "title": "The River",
+    "artist": "King Gizzard & the Lizard Wizard",
+    "artist_id": "king-gizzard-the-lizard-wizard",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.63,
+      "valence": 0.63,
+      "acousticness": 0.37,
+      "tempo": 111
+    },
+    "preview_url": null
+  },
+  {
+    "id": "khruangbin-mar-a-tambi-n",
+    "title": "María También",
+    "artist": "Khruangbin",
+    "artist_id": "khruangbin",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.58,
+      "valence": 0.55,
+      "acousticness": 0.28,
+      "tempo": 128
+    },
+    "preview_url": null
+  },
+  {
+    "id": "khruangbin-white-gloves",
+    "title": "White Gloves",
+    "artist": "Khruangbin",
+    "artist_id": "khruangbin",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.66,
+      "valence": 0.46,
+      "acousticness": 0.3,
+      "tempo": 116
+    },
+    "preview_url": null
+  },
+  {
+    "id": "khruangbin-time-you-and-i",
+    "title": "Time (You and I)",
+    "artist": "Khruangbin",
+    "artist_id": "khruangbin",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.69,
+      "valence": 0.44,
+      "acousticness": 0.2,
+      "tempo": 106
+    },
+    "preview_url": null
+  },
+  {
+    "id": "khruangbin-august-10",
+    "title": "August 10",
+    "artist": "Khruangbin",
+    "artist_id": "khruangbin",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.62,
+      "valence": 0.65,
+      "acousticness": 0.36,
+      "tempo": 119
+    },
+    "preview_url": null
+  },
+  {
+    "id": "unknown-mortal-orchestra-multi-love",
+    "title": "Multi-Love",
+    "artist": "Unknown Mortal Orchestra",
+    "artist_id": "unknown-mortal-orchestra",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.62,
+      "valence": 0.61,
+      "acousticness": 0.14,
+      "tempo": 103
+    },
+    "preview_url": null
+  },
+  {
+    "id": "unknown-mortal-orchestra-so-good-at-being-in-trouble",
+    "title": "So Good at Being in Trouble",
+    "artist": "Unknown Mortal Orchestra",
+    "artist_id": "unknown-mortal-orchestra",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.59,
+      "valence": 0.45,
+      "acousticness": 0.24,
+      "tempo": 108
+    },
+    "preview_url": null
+  },
+  {
+    "id": "pond-paint-me-silver",
+    "title": "Paint Me Silver",
+    "artist": "Pond",
+    "artist_id": "pond",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.6,
+      "valence": 0.58,
+      "acousticness": 0.21,
+      "tempo": 102
+    },
+    "preview_url": null
+  },
+  {
+    "id": "temples-shelter-song",
+    "title": "Shelter Song",
+    "artist": "Temples",
+    "artist_id": "temples",
+    "genres": [
+      "psych"
+    ],
+    "era": "2010s",
+    "moods": [
+      "hypnotic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.61,
+      "valence": 0.55,
+      "acousticness": 0.13,
+      "tempo": 115
+    },
+    "preview_url": null
+  },
+  {
+    "id": "miles-davis-so-what",
+    "title": "So What",
+    "artist": "Miles Davis",
+    "artist_id": "miles-davis",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1950s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.34,
+      "valence": 0.44,
+      "acousticness": 0.74,
+      "tempo": 95
+    },
+    "preview_url": null
+  },
+  {
+    "id": "miles-davis-freddie-freeloader",
+    "title": "Freddie Freeloader",
+    "artist": "Miles Davis",
+    "artist_id": "miles-davis",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1950s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.37,
+      "valence": 0.57,
+      "acousticness": 0.7,
+      "tempo": 111
+    },
+    "preview_url": null
+  },
+  {
+    "id": "miles-davis-blue-in-green",
+    "title": "Blue in Green",
+    "artist": "Miles Davis",
+    "artist_id": "miles-davis",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1950s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.44,
+      "valence": 0.57,
+      "acousticness": 0.76,
+      "tempo": 100
+    },
+    "preview_url": null
+  },
+  {
+    "id": "john-coltrane-naima",
+    "title": "Naima",
+    "artist": "John Coltrane",
+    "artist_id": "john-coltrane",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1960s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.39,
+      "valence": 0.53,
+      "acousticness": 0.73,
+      "tempo": 100
+    },
+    "preview_url": null
+  },
+  {
+    "id": "john-coltrane-giant-steps",
+    "title": "Giant Steps",
+    "artist": "John Coltrane",
+    "artist_id": "john-coltrane",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1960s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.41,
+      "valence": 0.5,
+      "acousticness": 0.61,
+      "tempo": 94
+    },
+    "preview_url": null
+  },
+  {
+    "id": "john-coltrane-my-favorite-things",
+    "title": "My Favorite Things",
+    "artist": "John Coltrane",
+    "artist_id": "john-coltrane",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1960s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.29,
+      "valence": 0.61,
+      "acousticness": 0.74,
+      "tempo": 104
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bill-evans-waltz-for-debby",
+    "title": "Waltz for Debby",
+    "artist": "Bill Evans",
+    "artist_id": "bill-evans",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1960s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.31,
+      "valence": 0.44,
+      "acousticness": 0.84,
+      "tempo": 97
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bill-evans-peace-piece",
+    "title": "Peace Piece",
+    "artist": "Bill Evans",
+    "artist_id": "bill-evans",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1960s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.45,
+      "valence": 0.54,
+      "acousticness": 0.83,
+      "tempo": 107
+    },
+    "preview_url": null
+  },
+  {
+    "id": "thelonious-monk-round-midnight",
+    "title": "'Round Midnight",
+    "artist": "Thelonious Monk",
+    "artist_id": "thelonious-monk",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1950s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.33,
+      "valence": 0.42,
+      "acousticness": 0.77,
+      "tempo": 102
+    },
+    "preview_url": null
+  },
+  {
+    "id": "thelonious-monk-blue-monk",
+    "title": "Blue Monk",
+    "artist": "Thelonious Monk",
+    "artist_id": "thelonious-monk",
+    "genres": [
+      "jazz"
+    ],
+    "era": "1950s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.4,
+      "valence": 0.42,
+      "acousticness": 0.74,
+      "tempo": 122
+    },
+    "preview_url": null
+  },
+  {
+    "id": "robert-glasper-afro-blue",
+    "title": "Afro Blue",
+    "artist": "Robert Glasper",
+    "artist_id": "robert-glasper",
+    "genres": [
+      "jazz"
+    ],
+    "era": "2010s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.3,
+      "valence": 0.54,
+      "acousticness": 0.68,
+      "tempo": 104
+    },
+    "preview_url": null
+  },
+  {
+    "id": "robert-glasper-cherish-the-day",
+    "title": "Cherish the Day",
+    "artist": "Robert Glasper",
+    "artist_id": "robert-glasper",
+    "genres": [
+      "jazz"
+    ],
+    "era": "2010s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.4,
+      "valence": 0.48,
+      "acousticness": 0.78,
+      "tempo": 116
+    },
+    "preview_url": null
+  },
+  {
+    "id": "kamasi-washington-truth",
+    "title": "Truth",
+    "artist": "Kamasi Washington",
+    "artist_id": "kamasi-washington",
+    "genres": [
+      "jazz"
+    ],
+    "era": "2010s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.47,
+      "valence": 0.61,
+      "acousticness": 0.65,
+      "tempo": 99
+    },
+    "preview_url": null
+  },
+  {
+    "id": "kamasi-washington-street-fighter-mas",
+    "title": "Street Fighter Mas",
+    "artist": "Kamasi Washington",
+    "artist_id": "kamasi-washington",
+    "genres": [
+      "jazz"
+    ],
+    "era": "2010s",
+    "moods": [
+      "smooth",
+      "contemplative"
+    ],
+    "audio_features": {
+      "energy": 0.41,
+      "valence": 0.49,
+      "acousticness": 0.61,
+      "tempo": 114
+    },
+    "preview_url": null
+  },
+  {
+    "id": "fela-kuti-water-no-get-enemy",
+    "title": "Water No Get Enemy",
+    "artist": "Fela Kuti",
+    "artist_id": "fela-kuti",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "1970s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.91,
+      "valence": 0.83,
+      "acousticness": 0.37,
+      "tempo": 126
+    },
+    "preview_url": null
+  },
+  {
+    "id": "fela-kuti-zombie",
+    "title": "Zombie",
+    "artist": "Fela Kuti",
+    "artist_id": "fela-kuti",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "1970s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.88,
+      "valence": 0.75,
+      "acousticness": 0.31,
+      "tempo": 121
+    },
+    "preview_url": null
+  },
+  {
+    "id": "fela-kuti-gentleman",
+    "title": "Gentleman",
+    "artist": "Fela Kuti",
+    "artist_id": "fela-kuti",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "1970s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.72,
+      "valence": 0.64,
+      "acousticness": 0.23,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "burna-boy-ye",
+    "title": "Ye",
+    "artist": "Burna Boy",
+    "artist_id": "burna-boy",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2010s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.84,
+      "valence": 0.73,
+      "acousticness": 0.41,
+      "tempo": 127
+    },
+    "preview_url": null
+  },
+  {
+    "id": "burna-boy-last-last",
+    "title": "Last Last",
+    "artist": "Burna Boy",
+    "artist_id": "burna-boy",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2010s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.79,
+      "valence": 0.72,
+      "acousticness": 0.35,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "burna-boy-on-the-low",
+    "title": "On the Low",
+    "artist": "Burna Boy",
+    "artist_id": "burna-boy",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2010s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.88,
+      "valence": 0.81,
+      "acousticness": 0.27,
+      "tempo": 125
+    },
+    "preview_url": null
+  },
+  {
+    "id": "wizkid-essence",
+    "title": "Essence",
+    "artist": "Wizkid",
+    "artist_id": "wizkid",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2020s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.86,
+      "valence": 0.78,
+      "acousticness": 0.28,
+      "tempo": 124
+    },
+    "preview_url": null
+  },
+  {
+    "id": "wizkid-ginger",
+    "title": "Ginger",
+    "artist": "Wizkid",
+    "artist_id": "wizkid",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2020s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.76,
+      "valence": 0.77,
+      "acousticness": 0.19,
+      "tempo": 117
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tony-allen-go-back",
+    "title": "Go Back",
+    "artist": "Tony Allen",
+    "artist_id": "tony-allen",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2010s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.79,
+      "valence": 0.62,
+      "acousticness": 0.21,
+      "tempo": 111
+    },
+    "preview_url": null
+  },
+  {
+    "id": "antibalas-dirty-money",
+    "title": "Dirty Money",
+    "artist": "Antibalas",
+    "artist_id": "antibalas",
+    "genres": [
+      "afrobeat"
+    ],
+    "era": "2010s",
+    "moods": [
+      "energetic",
+      "groovy"
+    ],
+    "audio_features": {
+      "energy": 0.78,
+      "valence": 0.7,
+      "acousticness": 0.35,
+      "tempo": 131
+    },
+    "preview_url": null
+  },
+  {
+    "id": "kendrick-lamar-money-trees",
+    "title": "Money Trees",
+    "artist": "Kendrick Lamar",
+    "artist_id": "kendrick-lamar",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.66,
+      "valence": 0.66,
+      "acousticness": 0.29,
+      "tempo": 90
+    },
+    "preview_url": null
+  },
+  {
+    "id": "kendrick-lamar-humble",
+    "title": "HUMBLE.",
+    "artist": "Kendrick Lamar",
+    "artist_id": "kendrick-lamar",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.77,
+      "valence": 0.49,
+      "acousticness": 0.11,
+      "tempo": 88
+    },
+    "preview_url": null
+  },
+  {
+    "id": "kendrick-lamar-alright",
+    "title": "Alright",
+    "artist": "Kendrick Lamar",
+    "artist_id": "kendrick-lamar",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.72,
+      "valence": 0.65,
+      "acousticness": 0.11,
+      "tempo": 84
+    },
+    "preview_url": null
+  },
+  {
+    "id": "kendrick-lamar-king-kunta",
+    "title": "King Kunta",
+    "artist": "Kendrick Lamar",
+    "artist_id": "kendrick-lamar",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.78,
+      "valence": 0.65,
+      "acousticness": 0.18,
+      "tempo": 103
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tyler-the-creator-earfquake",
+    "title": "EARFQUAKE",
+    "artist": "Tyler, the Creator",
+    "artist_id": "tyler-the-creator",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.66,
+      "valence": 0.65,
+      "acousticness": 0.06,
+      "tempo": 103
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tyler-the-creator-see-you-again",
+    "title": "See You Again",
+    "artist": "Tyler, the Creator",
+    "artist_id": "tyler-the-creator",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.71,
+      "valence": 0.51,
+      "acousticness": 0.23,
+      "tempo": 90
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tyler-the-creator-new-magic-wand",
+    "title": "NEW MAGIC WAND",
+    "artist": "Tyler, the Creator",
+    "artist_id": "tyler-the-creator",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.7,
+      "valence": 0.66,
+      "acousticness": 0.21,
+      "tempo": 91
+    },
+    "preview_url": null
+  },
+  {
+    "id": "a-tribe-called-quest-can-i-kick-it",
+    "title": "Can I Kick It?",
+    "artist": "A Tribe Called Quest",
+    "artist_id": "a-tribe-called-quest",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "1990s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.79,
+      "valence": 0.6,
+      "acousticness": 0.1,
+      "tempo": 102
+    },
+    "preview_url": null
+  },
+  {
+    "id": "a-tribe-called-quest-electric-relaxation",
+    "title": "Electric Relaxation",
+    "artist": "A Tribe Called Quest",
+    "artist_id": "a-tribe-called-quest",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "1990s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.76,
+      "valence": 0.51,
+      "acousticness": 0.26,
+      "tempo": 101
+    },
+    "preview_url": null
+  },
+  {
+    "id": "mf-doom-doomsday",
+    "title": "Doomsday",
+    "artist": "MF DOOM",
+    "artist_id": "mf-doom",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2000s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.82,
+      "valence": 0.51,
+      "acousticness": 0.2,
+      "tempo": 89
+    },
+    "preview_url": null
+  },
+  {
+    "id": "mf-doom-accordion",
+    "title": "Accordion",
+    "artist": "MF DOOM",
+    "artist_id": "mf-doom",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2000s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.68,
+      "valence": 0.66,
+      "acousticness": 0.24,
+      "tempo": 100
+    },
+    "preview_url": null
+  },
+  {
+    "id": "outkast-ms-jackson",
+    "title": "Ms. Jackson",
+    "artist": "Outkast",
+    "artist_id": "outkast",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2000s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.8,
+      "valence": 0.44,
+      "acousticness": 0.09,
+      "tempo": 105
+    },
+    "preview_url": null
+  },
+  {
+    "id": "outkast-b-o-b",
+    "title": "B.O.B.",
+    "artist": "Outkast",
+    "artist_id": "outkast",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2000s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.6,
+      "valence": 0.62,
+      "acousticness": 0.24,
+      "tempo": 101
+    },
+    "preview_url": null
+  },
+  {
+    "id": "j-dilla-don-t-cry",
+    "title": "Don't Cry",
+    "artist": "J Dilla",
+    "artist_id": "j-dilla",
+    "genres": [
+      "hip-hop"
+    ],
+    "era": "2000s",
+    "moods": [
+      "confident",
+      "laid-back"
+    ],
+    "audio_features": {
+      "energy": 0.76,
+      "valence": 0.61,
+      "acousticness": 0.2,
+      "tempo": 81
+    },
+    "preview_url": null
+  },
+  {
+    "id": "daft-punk-get-lucky",
+    "title": "Get Lucky",
+    "artist": "Daft Punk",
+    "artist_id": "daft-punk",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.67,
+      "valence": 0.63,
+      "acousticness": 0.03,
+      "tempo": 130
+    },
+    "preview_url": null
+  },
+  {
+    "id": "daft-punk-one-more-time",
+    "title": "One More Time",
+    "artist": "Daft Punk",
+    "artist_id": "daft-punk",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.66,
+      "valence": 0.67,
+      "acousticness": 0.2,
+      "tempo": 121
+    },
+    "preview_url": null
+  },
+  {
+    "id": "daft-punk-around-the-world",
+    "title": "Around the World",
+    "artist": "Daft Punk",
+    "artist_id": "daft-punk",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.72,
+      "valence": 0.56,
+      "acousticness": 0.16,
+      "tempo": 122
+    },
+    "preview_url": null
+  },
+  {
+    "id": "aphex-twin-windowlicker",
+    "title": "Windowlicker",
+    "artist": "Aphex Twin",
+    "artist_id": "aphex-twin",
+    "genres": [
+      "electronic"
+    ],
+    "era": "1990s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.87,
+      "valence": 0.67,
+      "acousticness": 0.11,
+      "tempo": 116
+    },
+    "preview_url": null
+  },
+  {
+    "id": "aphex-twin-xtal",
+    "title": "Xtal",
+    "artist": "Aphex Twin",
+    "artist_id": "aphex-twin",
+    "genres": [
+      "electronic"
+    ],
+    "era": "1990s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.7,
+      "valence": 0.51,
+      "acousticness": 0.12,
+      "tempo": 113
+    },
+    "preview_url": null
+  },
+  {
+    "id": "aphex-twin-avril-14th",
+    "title": "Avril 14th",
+    "artist": "Aphex Twin",
+    "artist_id": "aphex-twin",
+    "genres": [
+      "electronic"
+    ],
+    "era": "1990s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.68,
+      "valence": 0.54,
+      "acousticness": 0.01,
+      "tempo": 135
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bonobo-kerala",
+    "title": "Kerala",
+    "artist": "Bonobo",
+    "artist_id": "bonobo",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.68,
+      "valence": 0.65,
+      "acousticness": 0.0,
+      "tempo": 136
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bonobo-cirrus",
+    "title": "Cirrus",
+    "artist": "Bonobo",
+    "artist_id": "bonobo",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.78,
+      "valence": 0.53,
+      "acousticness": 0.0,
+      "tempo": 125
+    },
+    "preview_url": null
+  },
+  {
+    "id": "four-tet-two-thousand-and-seventeen",
+    "title": "Two Thousand and Seventeen",
+    "artist": "Four Tet",
+    "artist_id": "four-tet",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.76,
+      "valence": 0.55,
+      "acousticness": 0.19,
+      "tempo": 131
+    },
+    "preview_url": null
+  },
+  {
+    "id": "four-tet-baby",
+    "title": "Baby",
+    "artist": "Four Tet",
+    "artist_id": "four-tet",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.8,
+      "valence": 0.61,
+      "acousticness": 0.18,
+      "tempo": 125
+    },
+    "preview_url": null
+  },
+  {
+    "id": "caribou-can-t-do-without-you",
+    "title": "Can't Do Without You",
+    "artist": "Caribou",
+    "artist_id": "caribou",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.78,
+      "valence": 0.58,
+      "acousticness": 0.06,
+      "tempo": 132
+    },
+    "preview_url": null
+  },
+  {
+    "id": "jamie-xx-gosh",
+    "title": "Gosh",
+    "artist": "Jamie xx",
+    "artist_id": "jamie-xx",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.88,
+      "valence": 0.63,
+      "acousticness": 0.0,
+      "tempo": 118
+    },
+    "preview_url": null
+  },
+  {
+    "id": "jamie-xx-loud-places",
+    "title": "Loud Places",
+    "artist": "Jamie xx",
+    "artist_id": "jamie-xx",
+    "genres": [
+      "electronic"
+    ],
+    "era": "2010s",
+    "moods": [
+      "driving",
+      "euphoric"
+    ],
+    "audio_features": {
+      "energy": 0.84,
+      "valence": 0.48,
+      "acousticness": 0.15,
+      "tempo": 122
+    },
+    "preview_url": null
+  },
+  {
+    "id": "claude-debussy-clair-de-lune",
+    "title": "Clair de Lune",
+    "artist": "Claude Debussy",
+    "artist_id": "claude-debussy",
+    "genres": [
+      "classical"
+    ],
+    "era": "1900s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.33,
+      "valence": 0.53,
+      "acousticness": 0.98,
+      "tempo": 83
+    },
+    "preview_url": null
+  },
+  {
+    "id": "claude-debussy-r-verie",
+    "title": "Rêverie",
+    "artist": "Claude Debussy",
+    "artist_id": "claude-debussy",
+    "genres": [
+      "classical"
+    ],
+    "era": "1900s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.15,
+      "valence": 0.44,
+      "acousticness": 0.8,
+      "tempo": 100
+    },
+    "preview_url": null
+  },
+  {
+    "id": "erik-satie-gymnop-die-no-1",
+    "title": "Gymnopédie No.1",
+    "artist": "Erik Satie",
+    "artist_id": "erik-satie",
+    "genres": [
+      "classical"
+    ],
+    "era": "1900s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.32,
+      "valence": 0.38,
+      "acousticness": 0.85,
+      "tempo": 101
+    },
+    "preview_url": null
+  },
+  {
+    "id": "erik-satie-gnossienne-no-1",
+    "title": "Gnossienne No.1",
+    "artist": "Erik Satie",
+    "artist_id": "erik-satie",
+    "genres": [
+      "classical"
+    ],
+    "era": "1900s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.33,
+      "valence": 0.56,
+      "acousticness": 0.98,
+      "tempo": 89
+    },
+    "preview_url": null
+  },
+  {
+    "id": "j-s-bach-air-on-the-g-string",
+    "title": "Air on the G String",
+    "artist": "J.S. Bach",
+    "artist_id": "j-s-bach",
+    "genres": [
+      "classical"
+    ],
+    "era": "1720s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.26,
+      "valence": 0.47,
+      "acousticness": 1.0,
+      "tempo": 85
+    },
+    "preview_url": null
+  },
+  {
+    "id": "j-s-bach-cello-suite-no-1-prelude",
+    "title": "Cello Suite No.1: Prelude",
+    "artist": "J.S. Bach",
+    "artist_id": "j-s-bach",
+    "genres": [
+      "classical"
+    ],
+    "era": "1720s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.37,
+      "valence": 0.48,
+      "acousticness": 0.98,
+      "tempo": 84
+    },
+    "preview_url": null
+  },
+  {
+    "id": "max-richter-on-the-nature-of-daylight",
+    "title": "On the Nature of Daylight",
+    "artist": "Max Richter",
+    "artist_id": "max-richter",
+    "genres": [
+      "classical"
+    ],
+    "era": "2000s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.2,
+      "valence": 0.37,
+      "acousticness": 0.9,
+      "tempo": 80
+    },
+    "preview_url": null
+  },
+  {
+    "id": "max-richter-sleep",
+    "title": "Sleep",
+    "artist": "Max Richter",
+    "artist_id": "max-richter",
+    "genres": [
+      "classical"
+    ],
+    "era": "2000s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.22,
+      "valence": 0.49,
+      "acousticness": 1.0,
+      "tempo": 83
+    },
+    "preview_url": null
+  },
+  {
+    "id": "ludovico-einaudi-nuvole-bianche",
+    "title": "Nuvole Bianche",
+    "artist": "Ludovico Einaudi",
+    "artist_id": "ludovico-einaudi",
+    "genres": [
+      "classical"
+    ],
+    "era": "2010s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.14,
+      "valence": 0.47,
+      "acousticness": 1.0,
+      "tempo": 102
+    },
+    "preview_url": null
+  },
+  {
+    "id": "ludovico-einaudi-experience",
+    "title": "Experience",
+    "artist": "Ludovico Einaudi",
+    "artist_id": "ludovico-einaudi",
+    "genres": [
+      "classical"
+    ],
+    "era": "2010s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.15,
+      "valence": 0.57,
+      "acousticness": 0.85,
+      "tempo": 100
+    },
+    "preview_url": null
+  },
+  {
+    "id": "arvo-p-rt-spiegel-im-spiegel",
+    "title": "Spiegel im Spiegel",
+    "artist": "Arvo Pärt",
+    "artist_id": "arvo-p-rt",
+    "genres": [
+      "classical"
+    ],
+    "era": "1970s",
+    "moods": [
+      "serene",
+      "cinematic"
+    ],
+    "audio_features": {
+      "energy": 0.23,
+      "valence": 0.41,
+      "acousticness": 0.8,
+      "tempo": 87
+    },
+    "preview_url": null
+  },
+  {
+    "id": "nick-drake-pink-moon",
+    "title": "Pink Moon",
+    "artist": "Nick Drake",
+    "artist_id": "nick-drake",
+    "genres": [
+      "folk"
+    ],
+    "era": "1970s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.24,
+      "valence": 0.51,
+      "acousticness": 0.86,
+      "tempo": 87
+    },
+    "preview_url": null
+  },
+  {
+    "id": "nick-drake-river-man",
+    "title": "River Man",
+    "artist": "Nick Drake",
+    "artist_id": "nick-drake",
+    "genres": [
+      "folk"
+    ],
+    "era": "1970s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.47,
+      "valence": 0.4,
+      "acousticness": 0.91,
+      "tempo": 106
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bon-iver-skinny-love",
+    "title": "Skinny Love",
+    "artist": "Bon Iver",
+    "artist_id": "bon-iver",
+    "genres": [
+      "folk"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.25,
+      "valence": 0.53,
+      "acousticness": 0.97,
+      "tempo": 96
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bon-iver-holocene",
+    "title": "Holocene",
+    "artist": "Bon Iver",
+    "artist_id": "bon-iver",
+    "genres": [
+      "folk"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.37,
+      "valence": 0.4,
+      "acousticness": 0.97,
+      "tempo": 88
+    },
+    "preview_url": null
+  },
+  {
+    "id": "bon-iver-re-stacks",
+    "title": "re: Stacks",
+    "artist": "Bon Iver",
+    "artist_id": "bon-iver",
+    "genres": [
+      "folk"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.36,
+      "valence": 0.37,
+      "acousticness": 0.84,
+      "tempo": 88
+    },
+    "preview_url": null
+  },
+  {
+    "id": "fleet-foxes-white-winter-hymnal",
+    "title": "White Winter Hymnal",
+    "artist": "Fleet Foxes",
+    "artist_id": "fleet-foxes",
+    "genres": [
+      "folk"
+    ],
+    "era": "2010s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.43,
+      "valence": 0.55,
+      "acousticness": 0.91,
+      "tempo": 101
+    },
+    "preview_url": null
+  },
+  {
+    "id": "fleet-foxes-helplessness-blues",
+    "title": "Helplessness Blues",
+    "artist": "Fleet Foxes",
+    "artist_id": "fleet-foxes",
+    "genres": [
+      "folk"
+    ],
+    "era": "2010s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.42,
+      "valence": 0.37,
+      "acousticness": 0.78,
+      "tempo": 90
+    },
+    "preview_url": null
+  },
+  {
+    "id": "sufjan-stevens-mystery-of-love",
+    "title": "Mystery of Love",
+    "artist": "Sufjan Stevens",
+    "artist_id": "sufjan-stevens",
+    "genres": [
+      "folk"
+    ],
+    "era": "2010s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.32,
+      "valence": 0.5,
+      "acousticness": 0.92,
+      "tempo": 87
+    },
+    "preview_url": null
+  },
+  {
+    "id": "sufjan-stevens-chicago",
+    "title": "Chicago",
+    "artist": "Sufjan Stevens",
+    "artist_id": "sufjan-stevens",
+    "genres": [
+      "folk"
+    ],
+    "era": "2010s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.23,
+      "valence": 0.44,
+      "acousticness": 0.8,
+      "tempo": 113
+    },
+    "preview_url": null
+  },
+  {
+    "id": "jos-gonz-lez-heartbeats",
+    "title": "Heartbeats",
+    "artist": "José González",
+    "artist_id": "jos-gonz-lez",
+    "genres": [
+      "folk"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intimate",
+      "wistful"
+    ],
+    "audio_features": {
+      "energy": 0.25,
+      "valence": 0.48,
+      "acousticness": 0.88,
+      "tempo": 109
+    },
+    "preview_url": null
+  },
+  {
+    "id": "marvin-gaye-what-s-going-on",
+    "title": "What's Going On",
+    "artist": "Marvin Gaye",
+    "artist_id": "marvin-gaye",
+    "genres": [
+      "soul"
+    ],
+    "era": "1970s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.62,
+      "valence": 0.73,
+      "acousticness": 0.37,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "marvin-gaye-inner-city-blues",
+    "title": "Inner City Blues",
+    "artist": "Marvin Gaye",
+    "artist_id": "marvin-gaye",
+    "genres": [
+      "soul"
+    ],
+    "era": "1970s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.66,
+      "valence": 0.71,
+      "acousticness": 0.55,
+      "tempo": 114
+    },
+    "preview_url": null
+  },
+  {
+    "id": "marvin-gaye-let-s-get-it-on",
+    "title": "Let's Get It On",
+    "artist": "Marvin Gaye",
+    "artist_id": "marvin-gaye",
+    "genres": [
+      "soul"
+    ],
+    "era": "1970s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.58,
+      "valence": 0.6,
+      "acousticness": 0.38,
+      "tempo": 105
+    },
+    "preview_url": null
+  },
+  {
+    "id": "d-angelo-untitled-how-does-it-feel",
+    "title": "Untitled (How Does It Feel)",
+    "artist": "D'Angelo",
+    "artist_id": "d-angelo",
+    "genres": [
+      "soul"
+    ],
+    "era": "2000s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.6,
+      "valence": 0.54,
+      "acousticness": 0.53,
+      "tempo": 100
+    },
+    "preview_url": null
+  },
+  {
+    "id": "d-angelo-really-love",
+    "title": "Really Love",
+    "artist": "D'Angelo",
+    "artist_id": "d-angelo",
+    "genres": [
+      "soul"
+    ],
+    "era": "2000s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.49,
+      "valence": 0.64,
+      "acousticness": 0.49,
+      "tempo": 101
+    },
+    "preview_url": null
+  },
+  {
+    "id": "erykah-badu-on-on",
+    "title": "On & On",
+    "artist": "Erykah Badu",
+    "artist_id": "erykah-badu",
+    "genres": [
+      "soul"
+    ],
+    "era": "1990s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.53,
+      "valence": 0.68,
+      "acousticness": 0.34,
+      "tempo": 93
+    },
+    "preview_url": null
+  },
+  {
+    "id": "erykah-badu-didn-t-cha-know",
+    "title": "Didn't Cha Know",
+    "artist": "Erykah Badu",
+    "artist_id": "erykah-badu",
+    "genres": [
+      "soul"
+    ],
+    "era": "1990s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.55,
+      "valence": 0.65,
+      "acousticness": 0.41,
+      "tempo": 101
+    },
+    "preview_url": null
+  },
+  {
+    "id": "frank-ocean-pink-white",
+    "title": "Pink + White",
+    "artist": "Frank Ocean",
+    "artist_id": "frank-ocean",
+    "genres": [
+      "soul"
+    ],
+    "era": "2010s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.48,
+      "valence": 0.69,
+      "acousticness": 0.53,
+      "tempo": 97
+    },
+    "preview_url": null
+  },
+  {
+    "id": "frank-ocean-nights",
+    "title": "Nights",
+    "artist": "Frank Ocean",
+    "artist_id": "frank-ocean",
+    "genres": [
+      "soul"
+    ],
+    "era": "2010s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.6,
+      "valence": 0.6,
+      "acousticness": 0.45,
+      "tempo": 109
+    },
+    "preview_url": null
+  },
+  {
+    "id": "frank-ocean-thinkin-bout-you",
+    "title": "Thinkin Bout You",
+    "artist": "Frank Ocean",
+    "artist_id": "frank-ocean",
+    "genres": [
+      "soul"
+    ],
+    "era": "2010s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.46,
+      "valence": 0.63,
+      "acousticness": 0.46,
+      "tempo": 104
+    },
+    "preview_url": null
+  },
+  {
+    "id": "sade-smooth-operator",
+    "title": "Smooth Operator",
+    "artist": "Sade",
+    "artist_id": "sade",
+    "genres": [
+      "soul"
+    ],
+    "era": "1980s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.65,
+      "valence": 0.73,
+      "acousticness": 0.38,
+      "tempo": 99
+    },
+    "preview_url": null
+  },
+  {
+    "id": "sade-no-ordinary-love",
+    "title": "No Ordinary Love",
+    "artist": "Sade",
+    "artist_id": "sade",
+    "genres": [
+      "soul"
+    ],
+    "era": "1980s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.51,
+      "valence": 0.53,
+      "acousticness": 0.56,
+      "tempo": 96
+    },
+    "preview_url": null
+  },
+  {
+    "id": "al-green-let-s-stay-together",
+    "title": "Let's Stay Together",
+    "artist": "Al Green",
+    "artist_id": "al-green",
+    "genres": [
+      "soul"
+    ],
+    "era": "1970s",
+    "moods": [
+      "warm",
+      "sensual"
+    ],
+    "audio_features": {
+      "energy": 0.63,
+      "valence": 0.71,
+      "acousticness": 0.45,
+      "tempo": 105
+    },
+    "preview_url": null
+  },
+  {
+    "id": "brian-eno-an-ending-ascent",
+    "title": "An Ending (Ascent)",
+    "artist": "Brian Eno",
+    "artist_id": "brian-eno",
+    "genres": [
+      "ambient"
+    ],
+    "era": "1970s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.13,
+      "valence": 0.37,
+      "acousticness": 0.77,
+      "tempo": 73
+    },
+    "preview_url": null
+  },
+  {
+    "id": "brian-eno-music-for-airports-1-1",
+    "title": "Music for Airports 1/1",
+    "artist": "Brian Eno",
+    "artist_id": "brian-eno",
+    "genres": [
+      "ambient"
+    ],
+    "era": "1970s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.24,
+      "valence": 0.43,
+      "acousticness": 0.6,
+      "tempo": 85
+    },
+    "preview_url": null
+  },
+  {
+    "id": "brian-eno-by-this-river",
+    "title": "By This River",
+    "artist": "Brian Eno",
+    "artist_id": "brian-eno",
+    "genres": [
+      "ambient"
+    ],
+    "era": "1970s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.27,
+      "valence": 0.52,
+      "acousticness": 0.67,
+      "tempo": 82
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tycho-a-walk",
+    "title": "A Walk",
+    "artist": "Tycho",
+    "artist_id": "tycho",
+    "genres": [
+      "ambient"
+    ],
+    "era": "2010s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.16,
+      "valence": 0.39,
+      "acousticness": 0.62,
+      "tempo": 71
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tycho-awake",
+    "title": "Awake",
+    "artist": "Tycho",
+    "artist_id": "tycho",
+    "genres": [
+      "ambient"
+    ],
+    "era": "2010s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.2,
+      "valence": 0.44,
+      "acousticness": 0.72,
+      "tempo": 66
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tycho-dive",
+    "title": "Dive",
+    "artist": "Tycho",
+    "artist_id": "tycho",
+    "genres": [
+      "ambient"
+    ],
+    "era": "2010s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.25,
+      "valence": 0.45,
+      "acousticness": 0.66,
+      "tempo": 79
+    },
+    "preview_url": null
+  },
+  {
+    "id": "boards-of-canada-roygbiv",
+    "title": "Roygbiv",
+    "artist": "Boards of Canada",
+    "artist_id": "boards-of-canada",
+    "genres": [
+      "ambient"
+    ],
+    "era": "1990s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.08,
+      "valence": 0.41,
+      "acousticness": 0.74,
+      "tempo": 77
+    },
+    "preview_url": null
+  },
+  {
+    "id": "boards-of-canada-dayvan-cowboy",
+    "title": "Dayvan Cowboy",
+    "artist": "Boards of Canada",
+    "artist_id": "boards-of-canada",
+    "genres": [
+      "ambient"
+    ],
+    "era": "1990s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.27,
+      "valence": 0.33,
+      "acousticness": 0.63,
+      "tempo": 81
+    },
+    "preview_url": null
+  },
+  {
+    "id": "stars-of-the-lid-don-t-bother-they-re-here",
+    "title": "Don't Bother They're Here",
+    "artist": "Stars of the Lid",
+    "artist_id": "stars-of-the-lid",
+    "genres": [
+      "ambient"
+    ],
+    "era": "2000s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.2,
+      "valence": 0.52,
+      "acousticness": 0.66,
+      "tempo": 75
+    },
+    "preview_url": null
+  },
+  {
+    "id": "nils-frahm-says",
+    "title": "Says",
+    "artist": "Nils Frahm",
+    "artist_id": "nils-frahm",
+    "genres": [
+      "ambient"
+    ],
+    "era": "2010s",
+    "moods": [
+      "calm",
+      "spacious"
+    ],
+    "audio_features": {
+      "energy": 0.25,
+      "valence": 0.31,
+      "acousticness": 0.62,
+      "tempo": 88
+    },
+    "preview_url": null
+  },
+  {
+    "id": "metallica-master-of-puppets",
+    "title": "Master of Puppets",
+    "artist": "Metallica",
+    "artist_id": "metallica",
+    "genres": [
+      "metal"
+    ],
+    "era": "1980s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 0.83,
+      "valence": 0.35,
+      "acousticness": 0.0,
+      "tempo": 153
+    },
+    "preview_url": null
+  },
+  {
+    "id": "metallica-enter-sandman",
+    "title": "Enter Sandman",
+    "artist": "Metallica",
+    "artist_id": "metallica",
+    "genres": [
+      "metal"
+    ],
+    "era": "1980s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 0.86,
+      "valence": 0.27,
+      "acousticness": 0.03,
+      "tempo": 151
+    },
+    "preview_url": null
+  },
+  {
+    "id": "metallica-one",
+    "title": "One",
+    "artist": "Metallica",
+    "artist_id": "metallica",
+    "genres": [
+      "metal"
+    ],
+    "era": "1980s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 0.94,
+      "valence": 0.5,
+      "acousticness": 0.16,
+      "tempo": 143
+    },
+    "preview_url": null
+  },
+  {
+    "id": "black-sabbath-paranoid",
+    "title": "Paranoid",
+    "artist": "Black Sabbath",
+    "artist_id": "black-sabbath",
+    "genres": [
+      "metal"
+    ],
+    "era": "1970s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 0.93,
+      "valence": 0.38,
+      "acousticness": 0.0,
+      "tempo": 150
+    },
+    "preview_url": null
+  },
+  {
+    "id": "black-sabbath-iron-man",
+    "title": "Iron Man",
+    "artist": "Black Sabbath",
+    "artist_id": "black-sabbath",
+    "genres": [
+      "metal"
+    ],
+    "era": "1970s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 1.0,
+      "valence": 0.47,
+      "acousticness": 0.05,
+      "tempo": 131
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tool-schism",
+    "title": "Schism",
+    "artist": "Tool",
+    "artist_id": "tool",
+    "genres": [
+      "metal"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 0.93,
+      "valence": 0.44,
+      "acousticness": 0.0,
+      "tempo": 139
+    },
+    "preview_url": null
+  },
+  {
+    "id": "tool-lateralus",
+    "title": "Lateralus",
+    "artist": "Tool",
+    "artist_id": "tool",
+    "genres": [
+      "metal"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 0.96,
+      "valence": 0.33,
+      "acousticness": 0.0,
+      "tempo": 131
+    },
+    "preview_url": null
+  },
+  {
+    "id": "gojira-stranded",
+    "title": "Stranded",
+    "artist": "Gojira",
+    "artist_id": "gojira",
+    "genres": [
+      "metal"
+    ],
+    "era": "2010s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 1.0,
+      "valence": 0.36,
+      "acousticness": 0.06,
+      "tempo": 145
+    },
+    "preview_url": null
+  },
+  {
+    "id": "deftones-change-in-the-house-of-flies",
+    "title": "Change (In the House of Flies)",
+    "artist": "Deftones",
+    "artist_id": "deftones",
+    "genres": [
+      "metal"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 1.0,
+      "valence": 0.4,
+      "acousticness": 0.06,
+      "tempo": 130
+    },
+    "preview_url": null
+  },
+  {
+    "id": "mastodon-blood-and-thunder",
+    "title": "Blood and Thunder",
+    "artist": "Mastodon",
+    "artist_id": "mastodon",
+    "genres": [
+      "metal"
+    ],
+    "era": "2000s",
+    "moods": [
+      "intense",
+      "dark"
+    ],
+    "audio_features": {
+      "energy": 1.0,
+      "valence": 0.49,
+      "acousticness": 0.06,
+      "tempo": 128
+    },
+    "preview_url": null
+  },
+  {
+    "id": "dua-lipa-levitating",
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "artist_id": "dua-lipa",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.63,
+      "valence": 0.76,
+      "acousticness": 0.26,
+      "tempo": 129
+    },
+    "preview_url": null
+  },
+  {
+    "id": "dua-lipa-don-t-start-now",
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "artist_id": "dua-lipa",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.8,
+      "valence": 0.71,
+      "acousticness": 0.22,
+      "tempo": 115
+    },
+    "preview_url": null
+  },
+  {
+    "id": "dua-lipa-physical",
+    "title": "Physical",
+    "artist": "Dua Lipa",
+    "artist_id": "dua-lipa",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.77,
+      "valence": 0.82,
+      "acousticness": 0.12,
+      "tempo": 130
+    },
+    "preview_url": null
+  },
+  {
+    "id": "the-weeknd-blinding-lights",
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "artist_id": "the-weeknd",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.75,
+      "valence": 0.77,
+      "acousticness": 0.15,
+      "tempo": 127
+    },
+    "preview_url": null
+  },
+  {
+    "id": "the-weeknd-save-your-tears",
+    "title": "Save Your Tears",
+    "artist": "The Weeknd",
+    "artist_id": "the-weeknd",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.78,
+      "valence": 0.73,
+      "acousticness": 0.2,
+      "tempo": 131
+    },
+    "preview_url": null
+  },
+  {
+    "id": "the-weeknd-out-of-time",
+    "title": "Out of Time",
+    "artist": "The Weeknd",
+    "artist_id": "the-weeknd",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.74,
+      "valence": 0.82,
+      "acousticness": 0.23,
+      "tempo": 132
+    },
+    "preview_url": null
+  },
+  {
+    "id": "harry-styles-as-it-was",
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "artist_id": "harry-styles",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.78,
+      "valence": 0.75,
+      "acousticness": 0.31,
+      "tempo": 105
+    },
+    "preview_url": null
+  },
+  {
+    "id": "harry-styles-watermelon-sugar",
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "artist_id": "harry-styles",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.84,
+      "valence": 0.74,
+      "acousticness": 0.25,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "billie-eilish-bad-guy",
+    "title": "bad guy",
+    "artist": "Billie Eilish",
+    "artist_id": "billie-eilish",
+    "genres": [
+      "pop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.79,
+      "valence": 0.63,
+      "acousticness": 0.12,
+      "tempo": 106
+    },
+    "preview_url": null
+  },
+  {
+    "id": "billie-eilish-everything-i-wanted",
+    "title": "everything i wanted",
+    "artist": "Billie Eilish",
+    "artist_id": "billie-eilish",
+    "genres": [
+      "pop"
+    ],
+    "era": "2010s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.69,
+      "valence": 0.82,
+      "acousticness": 0.22,
+      "tempo": 123
+    },
+    "preview_url": null
+  },
+  {
+    "id": "taylor-swift-cruel-summer",
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "artist_id": "taylor-swift",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.82,
+      "valence": 0.63,
+      "acousticness": 0.26,
+      "tempo": 112
+    },
+    "preview_url": null
+  },
+  {
+    "id": "taylor-swift-anti-hero",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "artist_id": "taylor-swift",
+    "genres": [
+      "pop"
+    ],
+    "era": "2020s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.66,
+      "valence": 0.7,
+      "acousticness": 0.23,
+      "tempo": 121
+    },
+    "preview_url": null
+  },
+  {
+    "id": "abba-dancing-queen",
+    "title": "Dancing Queen",
+    "artist": "ABBA",
+    "artist_id": "abba",
+    "genres": [
+      "pop"
+    ],
+    "era": "1970s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.8,
+      "valence": 0.79,
+      "acousticness": 0.25,
+      "tempo": 131
+    },
+    "preview_url": null
+  },
+  {
+    "id": "abba-gimme-gimme-gimme",
+    "title": "Gimme! Gimme! Gimme!",
+    "artist": "ABBA",
+    "artist_id": "abba",
+    "genres": [
+      "pop"
+    ],
+    "era": "1970s",
+    "moods": [
+      "upbeat",
+      "catchy"
+    ],
+    "audio_features": {
+      "energy": 0.73,
+      "valence": 0.68,
+      "acousticness": 0.27,
+      "tempo": 111
+    },
+    "preview_url": null
+  }
+]

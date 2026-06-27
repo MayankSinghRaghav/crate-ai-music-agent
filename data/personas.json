@@ -1,0 +1,623 @@
+[
+  {
+    "id": "comfort-looper",
+    "display_name": "Maya (Comfort Looper)",
+    "persona": "Busy parent, 34. Plays the same ~50 songs on repeat; wants new music but has no energy to look.",
+    "comfort_pref": 0.2,
+    "top_genres": [
+      "pop",
+      "soul",
+      "indie"
+    ],
+    "listening_history": [
+      {
+        "track_id": "marvin-gaye-what-s-going-on",
+        "artist_id": "marvin-gaye",
+        "plays": 6,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-inner-city-blues",
+        "artist_id": "marvin-gaye",
+        "plays": 7,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-let-s-get-it-on",
+        "artist_id": "marvin-gaye",
+        "plays": 8,
+        "prompted": false
+      },
+      {
+        "track_id": "d-angelo-untitled-how-does-it-feel",
+        "artist_id": "d-angelo",
+        "plays": 9,
+        "prompted": false
+      },
+      {
+        "track_id": "d-angelo-really-love",
+        "artist_id": "d-angelo",
+        "plays": 10,
+        "prompted": false
+      },
+      {
+        "track_id": "erykah-badu-on-on",
+        "artist_id": "erykah-badu",
+        "plays": 11,
+        "prompted": false
+      },
+      {
+        "track_id": "erykah-badu-didn-t-cha-know",
+        "artist_id": "erykah-badu",
+        "plays": 12,
+        "prompted": false
+      },
+      {
+        "track_id": "frank-ocean-pink-white",
+        "artist_id": "frank-ocean",
+        "plays": 6,
+        "prompted": false
+      }
+    ]
+  },
+  {
+    "id": "aspirational-explorer",
+    "display_name": "Sam (Aspirational Explorer)",
+    "persona": "27. Opens Discover Weekly, saves a couple, forgets them by next week. High intent, nothing sticks.",
+    "comfort_pref": 0.6,
+    "top_genres": [
+      "indie",
+      "electronic",
+      "hip-hop",
+      "pop"
+    ],
+    "listening_history": [
+      {
+        "track_id": "tame-impala-the-less-i-know-the-better",
+        "artist_id": "tame-impala",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "tame-impala-let-it-happen",
+        "artist_id": "tame-impala",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "tame-impala-borderline",
+        "artist_id": "tame-impala",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "tame-impala-eventually",
+        "artist_id": "tame-impala",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-do-i-wanna-know",
+        "artist_id": "arctic-monkeys",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-505",
+        "artist_id": "arctic-monkeys",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-r-u-mine",
+        "artist_id": "arctic-monkeys",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
+        "artist_id": "arctic-monkeys",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "vampire-weekend-a-punk",
+        "artist_id": "vampire-weekend",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "vampire-weekend-harmony-hall",
+        "artist_id": "vampire-weekend",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "vampire-weekend-this-life",
+        "artist_id": "vampire-weekend",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "vampire-weekend-step",
+        "artist_id": "vampire-weekend",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "the-1975-somebody-else",
+        "artist_id": "the-1975",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "the-1975-robbers",
+        "artist_id": "the-1975",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "the-1975-chocolate",
+        "artist_id": "the-1975",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "phoenix-1901",
+        "artist_id": "phoenix",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "phoenix-lisztomania",
+        "artist_id": "phoenix",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "mac-demarco-chamber-of-reflection",
+        "artist_id": "mac-demarco",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "mac-demarco-my-kind-of-woman",
+        "artist_id": "mac-demarco",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "kendrick-lamar-money-trees",
+        "artist_id": "kendrick-lamar",
+        "plays": 2,
+        "prompted": false
+      }
+    ]
+  },
+  {
+    "id": "lapsed-digger",
+    "display_name": "Ravi (Lapsed Digger)",
+    "persona": "41. Used to crate-dig; fell into loops after kids. Nostalgic for older catalog.",
+    "comfort_pref": 0.4,
+    "top_genres": [
+      "jazz",
+      "soul",
+      "psych"
+    ],
+    "listening_history": [
+      {
+        "track_id": "miles-davis-so-what",
+        "artist_id": "miles-davis",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "miles-davis-freddie-freeloader",
+        "artist_id": "miles-davis",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "miles-davis-blue-in-green",
+        "artist_id": "miles-davis",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "john-coltrane-naima",
+        "artist_id": "john-coltrane",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "john-coltrane-giant-steps",
+        "artist_id": "john-coltrane",
+        "plays": 6,
+        "prompted": false
+      },
+      {
+        "track_id": "john-coltrane-my-favorite-things",
+        "artist_id": "john-coltrane",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "bill-evans-waltz-for-debby",
+        "artist_id": "bill-evans",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "bill-evans-peace-piece",
+        "artist_id": "bill-evans",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "thelonious-monk-round-midnight",
+        "artist_id": "thelonious-monk",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "thelonious-monk-blue-monk",
+        "artist_id": "thelonious-monk",
+        "plays": 6,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-what-s-going-on",
+        "artist_id": "marvin-gaye",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-inner-city-blues",
+        "artist_id": "marvin-gaye",
+        "plays": 3,
+        "prompted": false
+      }
+    ]
+  },
+  {
+    "id": "active-digger",
+    "display_name": "Noa (Active Digger)",
+    "persona": "23. Power user; finds Spotify's picks too safe. Wants deeper, riskier stretches.",
+    "comfort_pref": 0.85,
+    "top_genres": [
+      "electronic",
+      "hip-hop",
+      "ambient",
+      "psych"
+    ],
+    "listening_history": [
+      {
+        "track_id": "king-gizzard-the-lizard-wizard-rattlesnake",
+        "artist_id": "king-gizzard-the-lizard-wizard",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "king-gizzard-the-lizard-wizard-robot-stop",
+        "artist_id": "king-gizzard-the-lizard-wizard",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "king-gizzard-the-lizard-wizard-the-river",
+        "artist_id": "king-gizzard-the-lizard-wizard",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "khruangbin-mar-a-tambi-n",
+        "artist_id": "khruangbin",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "khruangbin-white-gloves",
+        "artist_id": "khruangbin",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "khruangbin-time-you-and-i",
+        "artist_id": "khruangbin",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "khruangbin-august-10",
+        "artist_id": "khruangbin",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "unknown-mortal-orchestra-multi-love",
+        "artist_id": "unknown-mortal-orchestra",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "unknown-mortal-orchestra-so-good-at-being-in-trouble",
+        "artist_id": "unknown-mortal-orchestra",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "pond-paint-me-silver",
+        "artist_id": "pond",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "temples-shelter-song",
+        "artist_id": "temples",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "kendrick-lamar-money-trees",
+        "artist_id": "kendrick-lamar",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "kendrick-lamar-humble",
+        "artist_id": "kendrick-lamar",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "kendrick-lamar-alright",
+        "artist_id": "kendrick-lamar",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "kendrick-lamar-king-kunta",
+        "artist_id": "kendrick-lamar",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "tyler-the-creator-earfquake",
+        "artist_id": "tyler-the-creator",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "tyler-the-creator-see-you-again",
+        "artist_id": "tyler-the-creator",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "tyler-the-creator-new-magic-wand",
+        "artist_id": "tyler-the-creator",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "a-tribe-called-quest-can-i-kick-it",
+        "artist_id": "a-tribe-called-quest",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "a-tribe-called-quest-electric-relaxation",
+        "artist_id": "a-tribe-called-quest",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "mf-doom-doomsday",
+        "artist_id": "mf-doom",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "mf-doom-accordion",
+        "artist_id": "mf-doom",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "outkast-ms-jackson",
+        "artist_id": "outkast",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "outkast-b-o-b",
+        "artist_id": "outkast",
+        "plays": 4,
+        "prompted": false
+      }
+    ]
+  },
+  {
+    "id": "mood-listener",
+    "display_name": "Lena (Mood Listener)",
+    "persona": "30. Lives in mood/daylist playlists; discovery is accidental and never adopted.",
+    "comfort_pref": 0.5,
+    "top_genres": [
+      "ambient",
+      "folk",
+      "soul"
+    ],
+    "listening_history": [
+      {
+        "track_id": "nick-drake-pink-moon",
+        "artist_id": "nick-drake",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "nick-drake-river-man",
+        "artist_id": "nick-drake",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "bon-iver-skinny-love",
+        "artist_id": "bon-iver",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "bon-iver-holocene",
+        "artist_id": "bon-iver",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "bon-iver-re-stacks",
+        "artist_id": "bon-iver",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "fleet-foxes-white-winter-hymnal",
+        "artist_id": "fleet-foxes",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "fleet-foxes-helplessness-blues",
+        "artist_id": "fleet-foxes",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "sufjan-stevens-mystery-of-love",
+        "artist_id": "sufjan-stevens",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "sufjan-stevens-chicago",
+        "artist_id": "sufjan-stevens",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "jos-gonz-lez-heartbeats",
+        "artist_id": "jos-gonz-lez",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-what-s-going-on",
+        "artist_id": "marvin-gaye",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-inner-city-blues",
+        "artist_id": "marvin-gaye",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "marvin-gaye-let-s-get-it-on",
+        "artist_id": "marvin-gaye",
+        "plays": 2,
+        "prompted": false
+      },
+      {
+        "track_id": "d-angelo-untitled-how-does-it-feel",
+        "artist_id": "d-angelo",
+        "plays": 3,
+        "prompted": false
+      }
+    ]
+  },
+  {
+    "id": "genre-curious",
+    "display_name": "Theo (Genre-Curious)",
+    "persona": "38. Wants to get into jazz but bounces off it every time. Needs a guided on-ramp.",
+    "comfort_pref": 0.45,
+    "top_genres": [
+      "indie",
+      "pop",
+      "folk"
+    ],
+    "mission_seed_genre": "jazz",
+    "listening_history": [
+      {
+        "track_id": "tame-impala-the-less-i-know-the-better",
+        "artist_id": "tame-impala",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "tame-impala-let-it-happen",
+        "artist_id": "tame-impala",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "tame-impala-borderline",
+        "artist_id": "tame-impala",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "tame-impala-eventually",
+        "artist_id": "tame-impala",
+        "plays": 6,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-do-i-wanna-know",
+        "artist_id": "arctic-monkeys",
+        "plays": 7,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-505",
+        "artist_id": "arctic-monkeys",
+        "plays": 3,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-r-u-mine",
+        "artist_id": "arctic-monkeys",
+        "plays": 4,
+        "prompted": false
+      },
+      {
+        "track_id": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
+        "artist_id": "arctic-monkeys",
+        "plays": 5,
+        "prompted": false
+      },
+      {
+        "track_id": "vampire-weekend-a-punk",
+        "artist_id": "vampire-weekend",
+        "plays": 6,
+        "prompted": false
+      },
+      {
+        "track_id": "vampire-weekend-harmony-hall",
+        "artist_id": "vampire-weekend",
+        "plays": 7,
+        "prompted": false
+      },
+      {
+        "track_id": "miles-davis-so-what",
+        "artist_id": "miles-davis",
+        "plays": 1,
+        "prompted": false
+      },
+      {
+        "track_id": "miles-davis-freddie-freeloader",
+        "artist_id": "miles-davis",
+        "plays": 1,
+        "prompted": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html,
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Comfort↔Curiosity range input — themed for the dark surface */
+input[type="range"].crate-dial {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #1db954 0%, #1db954 var(--fill, 50%), #2a2a2a var(--fill, 50%), #2a2a2a 100%);
+  outline: none;
+}
+input[type="range"].crate-dial::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #1db954;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+input[type="range"].crate-dial::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #1db954;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 9999px;
+}

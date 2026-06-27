@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  api:
+    name: API · pytest + adoption demo
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: services/api/requirements.txt
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Run tests (deterministic stub mode)
+        env:
+          LLM_PROVIDER: stub
+        run: pytest -q
+      - name: One-command adoption demo reproduces the milestone
+        env:
+          LLM_PROVIDER: stub
+        run: python scripts/demo.py active-digger
+
+  ingest:
+    name: Ingest · discovery engine (offline)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: ingest/requirements.txt
+      - name: Install deps
+        run: pip install -r ingest/requirements.txt
+      - name: Tests (offline stub)
+        env:
+          LLM_PROVIDER: stub
+        run: python -m pytest ingest/tests -q
+      - name: Smoke — multi-source backlog
+        env:
+          LLM_PROVIDER: stub
+        run: python -m ingest.run --sources all --limit 200
+
+  web:
+    name: Web · next build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install deps
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Build
+        run: npm run build

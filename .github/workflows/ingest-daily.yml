@@ -1,0 +1,105 @@
+# Daily AI Review Discovery Engine run.
+#
+# Pulls fresh public discussion from every source that has credentials, clusters +
+# tags it, and saves a ranked opportunity backlog. Any source without a secret
+# falls back to its bundled offline fixture, so this NEVER hard-fails.
+#
+# ── Setup (one-time, in GitHub) ───────────────────────────────────────────────
+# Repo → Settings → Secrets and variables → Actions → New repository secret.
+# All are OPTIONAL — add only the ones you have; the rest use fixtures:
+#   REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET   official Reddit API (reddit.com/prefs/apps)
+#   X_BEARER_TOKEN                            X / Twitter API v2 bearer
+#   YOUTUBE_API_KEY / YOUTUBE_VIDEO_IDS       YouTube Data API v3 (comma-sep video ids)
+#   PRODUCT_HUNT_TOKEN                        Product Hunt GraphQL dev token
+#   GROQ_API_KEY                              free LLM tagging (else deterministic stub)
+# App Store, Google Play and Spotify Community are KEYLESS — enabled below via
+# LIVE_SOURCES and need no secret.
+name: Daily Discovery Ingest
+
+on:
+  schedule:
+    - cron: "45 3 * * *" # 03:45 UTC daily = 09:15 AM IST (Asia/Kolkata, UTC+5:30)
+  workflow_dispatch: # manual "Run workflow" button
+    inputs:
+      sources:
+        description: "Sources (comma-separated) or 'all'"
+        default: "all"
+      limit:
+        description: "Max docs per source"
+        default: "200"
+
+# allow the job to commit the refreshed snapshot back to the repo
+permissions:
+  contents: write
+
+# never let two daily runs overlap
+concurrency:
+  group: ingest-daily
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    name: Pull · cluster · tag · backlog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: ingest/requirements.txt
+
+      - name: Install deps (incl. live-source adapters)
+        run: pip install -r ingest/requirements.txt
+
+      - name: Run the discovery engine
+        env:
+          # inputs (passed via env to avoid shell-injection from workflow_dispatch)
+          SOURCES: ${{ github.event.inputs.sources || 'all' }}
+          LIMIT: ${{ github.event.inputs.limit || '200' }}
+          # keyless sources — safe to enable; each falls back to fixtures on error
+          LIVE_SOURCES: app_store,play_store,spotify_community
+          # credentialed sources — go live only if the secret is set, else fixtures
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: "crate-discovery-engine/0.1 (github-actions)"
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_VIDEO_IDS: ${{ secrets.YOUTUBE_VIDEO_IDS }}
+          PRODUCT_HUNT_TOKEN: ${{ secrets.PRODUCT_HUNT_TOKEN }}
+          # tagging: Groq if the secret exists, else the offline stub (auto-resolves)
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LLM_PROVIDER: auto
+        run: python -m ingest.run --sources "$SOURCES" --limit "$LIMIT"
+
+      - name: Stamp the refreshed snapshot
+        id: snap
+        run: |
+          mkdir -p ingest/snapshots
+          STAMP="$(date -u +%Y-%m-%d)"
+          cp ingest/out/opportunities.csv  ingest/snapshots/opportunities-latest.csv
+          cp ingest/out/opportunities.json ingest/snapshots/opportunities-latest.json
+          echo "run_date=$STAMP" >> "$GITHUB_OUTPUT"
+
+      - name: Upload backlog (raw + ranked) as a dated artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-backlog-${{ steps.snap.outputs.run_date }}
+          path: |
+            ingest/out/opportunities.json
+            ingest/out/opportunities.csv
+            ingest/out/raw.jsonl
+          retention-days: 90
+
+      - name: Commit refreshed snapshot (only if it changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ingest/snapshots/
+          if git diff --cached --quiet; then
+            echo "Backlog unchanged today — nothing to commit."
+          else
+            git commit -m "chore(ingest): daily discovery backlog ${{ steps.snap.outputs.run_date }}"
+            git push
+          fi

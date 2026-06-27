@@ -1,0 +1,19 @@
+# AI Review Discovery Engine — ingestion pipeline deps.
+# Runs offline (fixtures + TF-IDF + KMeans) with just these.
+numpy==2.2.1
+scikit-learn==1.6.1          # TF-IDF embeddings (stub) + KMeans clustering + silhouette
+python-dotenv==1.0.1
+
+# tests
+pytest==8.3.4
+
+# OPTIONAL — only imported when the matching credentials are present:
+praw==7.8.1                  # live Reddit (official API)
+httpx==0.28.1                # tagging via REST (Groq/Gemini) + App Store / X / YouTube / Product Hunt
+google-play-scraper==1.2.7   # live Google Play reviews (no key)
+anthropic==0.42.0            # Claude tagging (alternative provider)
+openai==1.59.6               # semantic embeddings (text-embedding-3-large)
+
+# PRODUCTION clustering swap (heavy: torch + sentence-transformers + umap + hdbscan).
+# Documented in cluster.py; not installed for the offline-first slice.
+# bertopic==0.16.4

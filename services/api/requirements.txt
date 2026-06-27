@@ -1,0 +1,15 @@
+# Crate API — runtime deps (zero-setup local: no Postgres/keys required)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+numpy==2.2.1
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# dev / test
+pytest==8.3.4
+
+# OPTIONAL — only imported when ANTHROPIC_API_KEY / OPENAI_API_KEY are set.
+# The app runs fully in deterministic stub mode without these installed.
+anthropic==0.42.0
+openai==1.59.6

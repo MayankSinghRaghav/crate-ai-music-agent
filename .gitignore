@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Local data layer
+*.db
+services/api/crate.db
+
+# Node / Next
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+.vercel/
+
+# Env / secrets
+.env
+.env.local
+apps/web/.env.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Presentation / large binaries — not shipped to the repo
+*.pptx
+
+# Internal build-planning docs — kept locally, not published
+BUILD_PLAN.md
+Crate MVP - Claude Code Build Prompt.md

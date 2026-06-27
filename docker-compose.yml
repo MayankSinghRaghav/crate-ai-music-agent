@@ -1,0 +1,27 @@
+# Documented production-fidelity path: Postgres 16 + pgvector.
+# NOT required for local dev — Crate defaults to SQLite + an in-process vector
+# store. To use this instead:
+#   1) docker compose up -d
+#   2) set DB_BACKEND=postgres and VECTOR_BACKEND=pgvector in .env
+#   3) run the seed
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: crate-db
+    environment:
+      POSTGRES_USER: crate
+      POSTGRES_PASSWORD: crate
+      POSTGRES_DB: crate
+    ports:
+      - "5432:5432"
+    volumes:
+      - crate-pgdata:/var/lib/postgresql/data
+      - ./supabase/migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U crate -d crate"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  crate-pgdata:
