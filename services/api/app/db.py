@@ -265,7 +265,15 @@ def genre_counts() -> list[dict]:
     return out
 
 
+_TABLES = frozenset({
+    "meta", "users", "taste_profile", "catalog_tracks", "discovery_events",
+    "listening_log", "adoption_events", "missions", "feedback", "bridge_cache",
+})
+
+
 def count(table: str) -> int:
+    if table not in _TABLES:  # the f-string below must never see foreign input
+        raise ValueError(f"unknown table: {table!r}")
     with _connect() as conn:
         return conn.execute(f"select count(*) c from {table}").fetchone()["c"]
 
@@ -550,6 +558,13 @@ def get_cached_bridge(user_id: str, track_id: str) -> Optional[dict]:
     if not r:
         return None
     return {"bridge_text": r["bridge_text"], "shared": json.loads(r["shared"] or "[]")}
+
+
+def clear_bridge_cache(user_id: str) -> None:
+    """Invalidate cached bridges after the taste vector moves (EMA update) —
+    otherwise a bridge can reference a stale anchor artist forever."""
+    with _connect() as conn:
+        conn.execute("delete from bridge_cache where user_id=?", (user_id,))
 
 
 def set_cached_bridge(user_id: str, track_id: str, bridge_text: str, shared: list[str]) -> None:

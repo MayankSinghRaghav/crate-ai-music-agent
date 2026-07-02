@@ -74,6 +74,8 @@ class Settings:
     allowed_origins: tuple[str, ...] = tuple(
         o.strip().rstrip("/") for o in os.getenv("ALLOWED_ORIGINS", "").split(",") if o.strip()
     )
+    # Requests per minute per client IP (0 = off). Tests set 0 in conftest.
+    rate_limit_per_min: int = _int("RATE_LIMIT_PER_MIN", 60)
 
     # --- Adoption (North Star) thresholds ---
     demo_mode: bool = _bool("DEMO_MODE", True)

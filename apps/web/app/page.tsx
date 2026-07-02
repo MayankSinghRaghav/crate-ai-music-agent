@@ -153,7 +153,8 @@ export default function Home() {
 
   async function act(item: DigItem, action: Action) {
     if (!selectedId) return;
-    setActions((a) => ({ ...a, [item.track.id]: action }));
+    const prev = actions[item.track.id];
+    setActions((a) => ({ ...a, [item.track.id]: action })); // optimistic
     try {
       await api.event(selectedId, item.track.id, action);
       if (action === "skipped") {
@@ -172,7 +173,9 @@ export default function Home() {
       }
       loadMetrics(selectedId); // funnel / skip-rate / candidates update as you act
     } catch {
-      /* optimistic — ignore */
+      // revert instead of silently pretending the action stuck
+      setActions((a) => ({ ...a, [item.track.id]: prev as Action }));
+      setNotice(`Couldn't save that ${action} — the API didn't respond. Try again.`);
     }
   }
 

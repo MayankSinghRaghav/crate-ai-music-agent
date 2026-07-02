@@ -84,6 +84,7 @@ def adapt(user_id: str) -> float:
         mean = np.mean(np.asarray(vecs, dtype=np.float32), axis=0)
         updated = (1 - EMA_ALPHA) * np.asarray(taste, dtype=np.float32) + EMA_ALPHA * mean
         db.update_taste_vector(user_id, l2_normalize(updated).tolist())
+        db.clear_bridge_cache(user_id)  # taste moved — cached bridges may be stale
 
     # engagement guardrail
     comfort = float(user["comfort_pref"])

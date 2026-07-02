@@ -52,6 +52,14 @@ jobs:
           LLM_PROVIDER: stub
         run: python -m ingest.run --sources all --limit 200
 
+  docker:
+    name: API · deploy image builds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Render builds this exact image — prove it assembles before a deploy does.
+      - run: docker build -f services/api/Dockerfile -t crate-api .
+
   web:
     name: Web · next build
     runs-on: ubuntu-latest

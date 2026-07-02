@@ -6,10 +6,14 @@ Phase 6 adds the agent loop, adoption metrics, and time simulation.
 from __future__ import annotations
 
 import logging
+import time
+from collections import defaultdict, deque
+from concurrent.futures import ThreadPoolExecutor
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
 from . import adoption, agent, db, mission
 from .config import log_startup_mode, settings
@@ -46,6 +50,28 @@ def _on_startup() -> None:
     log_startup_mode()
 
 
+# ------------------------------------------------------------ rate limit ---
+
+# ponytail: per-IP sliding window, in-process. Enough for one Render instance;
+# move to the platform edge / Redis if this ever runs multi-instance.
+_hits: dict[str, deque] = defaultdict(deque)
+
+
+@app.middleware("http")
+async def rate_limit(request: Request, call_next):
+    limit = settings.rate_limit_per_min
+    if limit > 0 and request.url.path != "/health":
+        ip = request.client.host if request.client else "?"
+        now = time.monotonic()
+        q = _hits[ip]
+        while q and now - q[0] > 60:
+            q.popleft()
+        if len(q) >= limit:
+            return JSONResponse({"detail": "rate limit exceeded"}, status_code=429)
+        q.append(now)
+    return await call_next(request)
+
+
 # ----------------------------------------------------------------- health ---
 
 
@@ -67,13 +93,22 @@ def root() -> dict:
 # -------------------------------------------------------------------- dev ---
 
 
+def _demo_only() -> None:
+    """Destructive/simulation endpoints exist only while DEMO_MODE=true.
+    Set DEMO_MODE=false in production and they 404."""
+    if not settings.demo_mode:
+        raise HTTPException(404, "not found")
+
+
 @app.post("/dev/seed")
 def dev_seed() -> dict:
+    _demo_only()
     return seed()
 
 
 @app.post("/dev/reset")
 def dev_reset(user_id: str) -> dict:
+    _demo_only()
     if not db.get_user(user_id):
         raise HTTPException(404, "unknown user")
     db.reset_runtime(user_id)
@@ -159,14 +194,19 @@ def dig(user_id: str, comfort: float | None = None) -> DigResponse:
         used_artists.add(mi.track.artist_id)
         used_tracks.add(mi.track.id)
 
-    # PLAN + ACT (new picks fill the rest of the dig)
-    for r in recommend(user_id, eff_comfort, k=5):
+    # PLAN + ACT (new picks fill the rest of the dig).
+    # Bridges are LLM calls (~0.5s each live) — generate them concurrently so the
+    # first dig costs one round-trip, not five. Stub mode is unaffected.
+    recs = [
+        r for r in recommend(user_id, eff_comfort, k=5)
+        if r["track"]["artist_id"] not in used_artists and r["track"]["id"] not in used_tracks
+    ]
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        bridges = list(pool.map(lambda r: generate_bridge(user_id, profile or {}, r["track"]), recs))
+    for r, bridge in zip(recs, bridges):
         if len(items) >= 5:
             break
         track = r["track"]
-        if track["artist_id"] in used_artists or track["id"] in used_tracks:
-            continue
-        bridge = generate_bridge(user_id, profile or {}, track)
         if not bridge:  # grounding guard — never show an ungrounded card
             continue
         db.insert_discovery_event(user_id, track["id"], "dig", bridge["bridge_text"], bridge["shared"])
@@ -206,6 +246,7 @@ def metrics_adoption(user_id: str) -> AdoptionMetrics:
 
 @app.post("/dev/simulate", response_model=LoopResult)
 def dev_simulate(user_id: str, days: int = 4, plays: int = 1) -> LoopResult:
+    _demo_only()
     if not db.get_user(user_id):
         raise HTTPException(404, "unknown user")
     return agent.simulate(user_id, days, plays)

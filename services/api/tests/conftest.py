@@ -18,6 +18,9 @@ os.environ.setdefault("ADOPT_WEEKS", "3")
 # Tests must be deterministic + offline — force the stub regardless of any real
 # provider key present in the developer's .env.
 os.environ["LLM_PROVIDER"] = "stub"
+# The suite fires hundreds of requests from one client — rate limiter off here;
+# test_prod_hardening exercises it explicitly via monkeypatch.
+os.environ["RATE_LIMIT_PER_MIN"] = "0"
 
 # clean slate each session
 for _suffix in ("", "-wal", "-shm"):

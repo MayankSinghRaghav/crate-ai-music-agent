@@ -1,0 +1,19 @@
+# Render Blueprint — one-click API deploy (New + → Blueprint → this repo).
+# Web goes to Vercel separately (see DEPLOY.md).
+services:
+  - type: web
+    name: crate-api
+    runtime: docker
+    plan: free
+    dockerfilePath: services/api/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: DEMO_MODE # keeps the graded demo flow (Simulate button) working
+        value: "true"
+      - key: RATE_LIMIT_PER_MIN
+        value: "60"
+      - key: GROQ_API_KEY # set in the Render dashboard (never committed)
+        sync: false
+      - key: ALLOWED_ORIGINS # e.g. https://crate.vercel.app
+        sync: false

@@ -25,7 +25,9 @@ The API is the source of truth; the web app is a static/SSR client that calls it
 
 The API ships a [`services/api/Dockerfile`](services/api/Dockerfile) that installs deps, copies the app + seed data, **seeds on boot**, and serves uvicorn on `$PORT`. Any container host can build and run it.
 
-**Render (free tier works):**
+**Render (free tier works) — one click:** New + → **Blueprint** → connect this repo. [`render.yaml`](render.yaml) defines the service (Docker, health check, env vars); you only fill in `GROQ_API_KEY` and `ALLOWED_ORIGINS` in the dashboard.
+
+**Or manually:**
 1. New → **Web Service** → connect this GitHub repo.
 2. **Runtime: Docker**. **Dockerfile path:** `services/api/Dockerfile`. **Docker build context:** the **repo root** (`.`) — the Dockerfile copies `data/`, which lives at the root.
 3. **Environment variables:**
