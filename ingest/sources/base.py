@@ -45,6 +45,9 @@ RELEVANCE = (
     "new music", "same songs", "same five", "on repeat", "stuck", "rut", "stale",
     "rotation", "playlist", "suggest", "echo chamber", "get into", "explore",
     "find new", "taste", "loop", "adventurous",
+    # broadened for real store reviews (short, less-jargon language than reddit):
+    "repetitive", "boring", "variety", "diverse", "artist", "same", "shuffle",
+    "genre", "old song", "predictable", "fresh",
 )
 
 

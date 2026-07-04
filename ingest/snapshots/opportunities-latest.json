@@ -1,145 +1,64 @@
 [
   {
-    "topic": "Discovery and Exploration",
-    "size": 59,
+    "topic": "Music Discovery and Personalization",
+    "size": 47,
     "cluster_ids": [
-      7
+      2,
+      6
     ],
-    "sentiment": "negative",
-    "unmet_need": "Personalized guidance and contextual recommendations to facilitate music discovery",
-    "segment": "Casual listeners and busy individuals seeking effortless discovery",
+    "sentiment": "mixed",
+    "unmet_need": "More effective and personalized music discovery features that go beyond current algorithms",
+    "segment": "Power users and music enthusiasts",
     "research_question": "",
     "keywords": [
-      "songs",
-      "song",
-      "playlist",
-      "app",
+      "music",
+      "album",
       "spotify",
-      "like"
+      "songs",
+      "new",
+      "mode"
     ],
     "example_quotes": [
-      "Chévere😘. Me encantan mi playlist sin Spotify me vuelvo loca😂🩷",
-      "functionality to chose and support versions, I hear the same songs multiple times on shuffle.",
-      "Stuck on repeat with the same comfort songs. The app never gently nudges me to expand my rotation."
+      "Recommendations arrive with no context. Just tell me why this track fits my taste so I can trust it.",
+      "Overwhelmed by the firehose of new releases every Friday. Discovery is just too much effort and too high-effort to keep up with.",
+      "I'm a power user who digs deep cuts and obscure artists below a certain popularity. Spotify's recommendations and discovery are far too cautious and safe for me."
     ],
-    "share": 0.303,
-    "opportunity_score": 59.0,
+    "share": 0.398,
+    "opportunity_score": 28.2,
     "rank": 1
   },
   {
-    "topic": "Music Discovery",
-    "size": 50,
-    "cluster_ids": [
-      6,
-      5
-    ],
-    "sentiment": "mixed",
-    "unmet_need": "Personalized music recommendations that go beyond familiar artists and genres",
-    "segment": "Music enthusiasts seeking new artists and genres",
-    "research_question": "",
-    "keywords": [
-      "artists",
-      "release",
-      "radar",
-      "release radar",
-      "songs",
-      "listen"
-    ],
-    "example_quotes": [
-      "LOVE IT. I love that I can listen to all my favorite artists and songs and make playlist for free!",
-      "why do i save 10 songs off release radar and then never listen to them again. nothing ever sticks lol",
-      "Same here. The algorithm keeps recommending the same five artists over and over. It feels like an echo chamber, not discovery."
-    ],
-    "share": 0.256,
-    "opportunity_score": 30.0,
-    "rank": 2
-  },
-  {
-    "topic": "Personalized Music Discovery and Retention",
-    "size": 23,
-    "cluster_ids": [
-      4
-    ],
-    "sentiment": "negative",
-    "unmet_need": "Effortless introduction to new music that fits their existing taste, with features to help retain and incorporate new artists into their regular listening habits",
-    "segment": "Busy Parents",
-    "research_question": "",
-    "keywords": [
-      "new",
-      "music",
-      "new music",
-      "discovery",
-      "artist",
-      "play"
-    ],
-    "example_quotes": [
-      "as a busy parent i have zero time to crate dig. i just want good new music to come to me with no effort",
-      "Busy parents need zero-effort discovery that respects their time and comes to them instead of making them dig.",
-      "New music never sticks for me. I play a recommended song once and forget it — it never makes it into my rotation."
-    ],
-    "share": 0.118,
-    "opportunity_score": 23.0,
-    "rank": 3
-  },
-  {
-    "topic": "Discovery and Recommendations",
-    "size": 20,
-    "cluster_ids": [
-      0
-    ],
-    "sentiment": "negative",
-    "unmet_need": "Personalized and adventurous music discovery that caters to individual tastes and preferences",
-    "segment": "Power users and crate diggers",
-    "research_question": "",
-    "keywords": [
-      "recommendations",
-      "want",
-      "safe",
-      "comfort",
-      "just",
-      "taste"
-    ],
-    "example_quotes": [
-      "give me a dial for how adventurous my recs are. some days i want comfort, some days i want a real stretch",
-      "Grounded 'why this' bridges build trust. Recommendations without a reason feel random and I never act on them.",
-      "A comfort-to-curiosity dial is genius. The biggest gap in every recommender is control over how far the recs stretch."
-    ],
-    "share": 0.103,
-    "opportunity_score": 20.0,
-    "rank": 4
-  },
-  {
-    "topic": "Lack of Music Discovery",
-    "size": 15,
+    "topic": "Music Discovery and Playlist Curation",
+    "size": 21,
     "cluster_ids": [
       1
     ],
-    "sentiment": "negative",
-    "unmet_need": "Users want to discover new and diverse music, but the current algorithm only recommends familiar or repetitive artists and genres",
-    "segment": "Music enthusiasts and power users who rely on Discover Weekly for new music discovery",
+    "sentiment": "mixed",
+    "unmet_need": "More control over music discovery, better playlist curation, and increased user engagement",
+    "segment": "Music enthusiasts and power users",
     "research_question": "",
     "keywords": [
-      "discover",
       "weekly",
-      "discover weekly",
       "playlist",
-      "week",
-      "artists"
+      "discover weekly",
+      "discover",
+      "want",
+      "playlists"
     ],
     "example_quotes": [
-      "My discover weekly is stale. Every week it's the same vibe and the same handful of artists. I'm bored of it.",
-      "discover weekly used to find me artists i'd never have found myself. now it's all safe picks i already know. discovery is broken",
-      "I open Discover Weekly, save a couple songs, and forget them by next week. High intent, nothing sticks. Story of my Spotify life."
+      "Discover Weekly has gone stale and repetitive. I never discover anything genuinely new from it anymore.",
+      "High intent here — I open Discover Weekly, save a couple, then forget them. Nothing ever converts into a habit.",
+      "Please add a comfort-to-curiosity control. Let me push the algorithm to be more out there and adventurous when I want."
     ],
-    "share": 0.077,
-    "opportunity_score": 15.0,
-    "rank": 5
+    "share": 0.178,
+    "opportunity_score": 12.6,
+    "rank": 2
   },
   {
     "topic": "AI-generated music in Discover Weekly",
     "size": 12,
     "cluster_ids": [
-      2
+      5
     ],
     "sentiment": "negative",
     "unmet_need": "ability to filter out AI-generated music from recommendations",
@@ -158,35 +77,116 @@
       "Re: Mark / Disable AI Generated Songs. Always create your own playlists, folks. Discover music through other sites instead",
       "Re: Mark / Disable AI Generated Songs. I don’t post to stuff like this. Gang….if I can’t filter AI content soon, I’m out. Have loved the service for several years now, but I can’t even listen to my discover weekly anymore.&nbsp;"
     ],
-    "share": 0.062,
+    "share": 0.102,
     "opportunity_score": 12.0,
-    "rank": 6
+    "rank": 3
+  },
+  {
+    "topic": "Music Discovery Algorithm",
+    "size": 6,
+    "cluster_ids": [
+      7
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Users want a music discovery algorithm that surfaces new and diverse music, rather than just recommending songs they already know and like",
+    "segment": "Power Diggers",
+    "research_question": "",
+    "keywords": [
+      "soundnex",
+      "artists",
+      "playlist",
+      "review",
+      "vicious ip",
+      "app"
+    ],
+    "example_quotes": [
+      "Thievery Incorporated. The most stupid and vicious IP thefts of hapless artists. Leave this app",
+      "The algorithm keeps recycling my own taste back at me. Total echo chamber — I already have and already follow these artists.",
+      "SoundNex | 9★+ Club. ⭐ SoundNex | 9★+ Club A curated selection of the highest-rated tracks reviewed by SoundNex web1.cc. Every song in this playlist received a 9/10 or 10/10 rating and was recognized for outstanding creativity, production, and artistic expression. Discover exceptional independent artists and releases that left a lasting impression. 🏆 Editorially selected 🌍 Independent artists worldwide ⭐ 9★+ rated tracks only https://open.spotify.com/playlist/4fuR2egJlACZY8z4pHTvGl?si=fahOSHG5RdGAYykXdj-4Lg"
+    ],
+    "share": 0.051,
+    "opportunity_score": 6.0,
+    "rank": 4
   },
   {
     "topic": "No guided on-ramp into a new genre",
-    "size": 16,
+    "size": 23,
     "cluster_ids": [
       3
     ],
     "sentiment": "positive",
     "unmet_need": "Staged, goal-based exploration that coaches you into a genre",
-    "segment": "Time-poor (busy parent)",
+    "segment": "Aspirational explorer",
     "research_question": "Q3 listening behaviours users want",
     "keywords": [
       "nbsp",
       "spotify",
-      "playlist",
-      "new",
       "music",
-      "track"
+      "playlist",
+      "song",
+      "like"
     ],
     "example_quotes": [
-      "Re: i feel like all the playlists now sound the same and don't find new music. If you want to discover, you might want to listen my playlist. &nbsp; It soon hits 10 000 songs on Spotify. &nbsp; https://open.spotify.com/playlist/2WqJBJQjrFpeztv5AiS6PG?si=862bd9e694354a56 &nbsp; You might want to try new playlists, in new genre, to hear something new and special",
-      "Re: Let's introduce ourselves!. Hi @SunnyIsNotOkay , welcome to the Community 😀 &nbsp; I actually discover tracks like&nbsp;\"垮\" fairly regularly through my playlist curation. 'ASA Wu' is a hidden gem. 'Garden' from her latest EP and 'Saturday Afternoon' would sit next to&nbsp;\"垮\" like gold and platinum.&nbsp; &nbsp; Perfect timing too&nbsp; - Trooper Salute released a new album today called \"友達がいました\". Your favorite artist has a busy week ahead 😍 &nbsp; Good luck with your courses! May the semester end better than you're predicting.&nbsp; Kia ora from New Zealand. Welcome 😀",
-      "Improve the big green play button in playlists. This is the scenario. I open the desktop app, and then click on a playlist like Discover Weekly. There's a big green button at the top of this view - what do you think happens if you press it?&nbsp; &nbsp; Logically, it should mean the user intends to play this playlist. But that's not what it does. This just resumes whatever was playing last time you used Spotify.&nbsp; &nbsp; There are actually 2 play buttons in the UI in this user journey. The white one at the bottom could resume where the user left off last time. The green one in the playlist, should play the playlist.&nbsp;"
+      "Podcasts by Country. I'd love to be able to filter podcasts by country, so I can listen to native speakers from a language I'd like to learn. This would make it easier to discover authentic content and improve language skills through real conversations and local accents. &nbsp;",
+      "Discover weekly genres. Hi! Every week Discover weekly sends me two genres that I have no interest in. They are the same each week. How do I exclude those genres from what it sends me in future? Is it possible? &nbsp; Plan Premium Country UK Device (iPhone 16 Pro) Operating System (iOS 26.5) &nbsp; My Question or Issue &nbsp;",
+      "Re: Restore Web API write access for individual developers (Development mode) —   follow/playlist en. Hi @dbesoain &nbsp; Thanks for posting in the Spotify Community! Spotify made a lot of changes to its API. I understand your struggle. According to Migration Guide , all save and follow actions use PUT /me/library now. I hope this helps you in making your music discover tool. Let me know if you need anything else"
     ],
-    "share": 0.082,
-    "opportunity_score": 4.0,
+    "share": 0.195,
+    "opportunity_score": 5.75,
+    "rank": 5
+  },
+  {
+    "topic": "Personalization and Social Features",
+    "size": 6,
+    "cluster_ids": [
+      4
+    ],
+    "sentiment": "mixed",
+    "unmet_need": "Control over music discovery and social features",
+    "segment": "Power users and music enthusiasts",
+    "research_question": "",
+    "keywords": [
+      "dj",
+      "spotify",
+      "jam",
+      "ai",
+      "public",
+      "ai dj"
+    ],
+    "example_quotes": [
+      "DJ sucks. Love the recommendation algorithm in \"DJ\", but hate the ai dj. Would love it if we had the option to turn him off",
+      "Public Spotify Jams  Spotify Jam. Public Spotify Jams Spotify Jam is a fantastic feature, but it's currently limited to invited users or people nearby. I would love an option to create public Jams that anyone on Spotify could discover and join. Users could browse Jams by genre, mood, country, or activity (study, workout, road trip, etc.). Hosts could choose whether their Jam is Public or Private and still have moderation controls, such as removing participants or limiting who can change the queue. This would make Spotify much more social while helping users discover new music and connect with people who share similar musical tastes",
+      "Public Jam. So I had an idea: instead of Jam being private like it is today, why not allow users to make it public to everyone on Spotify, or even limit it to Premium subscribers? &nbsp; People could discover new songs from other participants, enjoy a shared listening experience, and even chat about the music. Users joining a public Jam could suggest the next song to play or simply listen and enjoy the vibe. &nbsp; I think this could encourage more people to use the app because listening to music together is fun and creates a sense of community. It would be like a mix between Spotify and a live radio station powered by the listeners themselves. &nbsp; What do you think? Would you use a feature like this? 🎧 ❤️ &nbsp; If you like this idea, give it a vote! 👍🏻 🎶"
+    ],
+    "share": 0.051,
+    "opportunity_score": 3.6,
+    "rank": 6
+  },
+  {
+    "topic": "Ad Frequency",
+    "size": 3,
+    "cluster_ids": [
+      0
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Ad-free listening experience",
+    "segment": "Casual music listeners",
+    "research_question": "",
+    "keywords": [
+      "ads",
+      "playlists",
+      "love",
+      "like",
+      "don",
+      "song"
+    ],
+    "example_quotes": [
+      "Review. Love that I can have unlimited playlists absolutely hate the ads.",
+      "Great. I love Spotify for many reasons but one big one is that it’s very organized by like pop, rock, indie music, and more. And it has tons of great songs. I love ittttttt!! You can make playlists like I have many playlists.",
+      "Too many ads. After a while of every 30 minutes, a few ads Spotify stops, and there is as after every single song and sometimes it cuts between the song to put it at ads are too frequent and I don’t recommend if you don’t like ads"
+    ],
+    "share": 0.025,
+    "opportunity_score": 3.0,
     "rank": 7
   }
 ]
