@@ -34,7 +34,7 @@ export function FeedbackModal({
         <h3 className="text-lg font-semibold">Tell me why</h3>
         <p className="mt-1 text-sm text-spotify-subtle">
           Skipping <span className="text-white">{item.track.title}</span> by{" "}
-          <span className="text-white">{item.track.artist}</span>. I'll keep this
+          <span className="text-white">{item.track.artist}</span>. I&apos;ll keep this
           artist out of your future digs.
         </p>
 
