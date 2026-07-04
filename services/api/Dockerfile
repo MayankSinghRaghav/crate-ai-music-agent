@@ -20,6 +20,8 @@ RUN pip install -r services/api/requirements.txt
 # 2) app code + seed data (data/ resolves to REPO_ROOT/data inside the app)
 COPY services/api ./services/api
 COPY data ./data
+# discovery backlog snapshot — grounds the /insights/ask chat
+COPY ingest/snapshots ./ingest/snapshots
 
 WORKDIR /app/services/api
 

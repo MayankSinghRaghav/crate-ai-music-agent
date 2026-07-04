@@ -15,12 +15,13 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from . import adoption, agent, db, mission
+from . import adoption, agent, db, insights, mission
 from .config import log_startup_mode, settings
 from .llm import generate_bridge
 from .models import (
     AdoptionMetrics, DigItem, DigResponse, EventIn, FeedbackIn, GenreInfo,
-    LoopResult, Mission, MissionCreateIn, TasteProfile, User,
+    InsightsAnswer, InsightsAskIn, LoopResult, Mission, MissionCreateIn,
+    TasteProfile, User,
 )
 from .recommender import recommend
 from .seed import seed
@@ -311,3 +312,22 @@ def end_mission(user_id: str) -> dict:
     if not db.get_user(user_id):
         raise HTTPException(404, "unknown user")
     return {"ok": True, "ended": mission.end(user_id)}
+
+
+# -------------------------------------------------------------- insights ---
+
+
+@app.post("/insights/ask", response_model=InsightsAnswer)
+def insights_ask(body: InsightsAskIn) -> InsightsAnswer:
+    """Answer a question grounded only in the discovery-opportunity backlog.
+
+    503 when no live LLM provider is configured or the call fails — the chat has
+    no offline template answer, so the UI shows an "assistant unavailable" state
+    rather than a fabricated reply.
+    """
+    result = insights.answer(body.question, [h.model_dump() for h in body.history])
+    if result is None:
+        raise HTTPException(
+            503, "The insights assistant is unavailable right now. Please try again."
+        )
+    return InsightsAnswer(**result)
