@@ -54,11 +54,6 @@ def _row(r: Optional[sqlite3.Row]) -> Optional[dict]:
 # -------------------------------------------------------------------- schema ---
 
 SCHEMA = """
-create table if not exists meta (
-  key text primary key,
-  value text
-);
-
 create table if not exists users (
   id text primary key,
   display_name text not null,
@@ -75,7 +70,6 @@ create table if not exists taste_profile (
   top_artists text default '[]',
   top_genres text default '[]',
   top_moods text default '[]',
-  trajectory text default '[]',
   updated_at text
 );
 
@@ -171,23 +165,6 @@ def init_db() -> None:
                 conn.execute(stmt)
             except sqlite3.OperationalError:
                 pass  # column already present
-
-
-# ---------------------------------------------------------------------- meta ---
-
-
-def set_meta(key: str, value: Any) -> None:
-    with _connect() as conn:
-        conn.execute(
-            "insert into meta(key,value) values(?,?) on conflict(key) do update set value=excluded.value",
-            (key, _j(value)),
-        )
-
-
-def get_meta(key: str, default: Any = None) -> Any:
-    with _connect() as conn:
-        r = conn.execute("select value from meta where key=?", (key,)).fetchone()
-    return json.loads(r["value"]) if r else default
 
 
 # -------------------------------------------------------------------- tracks ---
@@ -327,14 +304,14 @@ def upsert_taste_profile(
 ) -> None:
     with _connect() as conn:
         conn.execute(
-            """insert into taste_profile(user_id,summary,taste_vector,top_artists,top_genres,top_moods,trajectory,updated_at)
-               values(?,?,?,?,?,?,?,?)
+            """insert into taste_profile(user_id,summary,taste_vector,top_artists,top_genres,top_moods,updated_at)
+               values(?,?,?,?,?,?,?)
                on conflict(user_id) do update set
                  summary=excluded.summary, taste_vector=excluded.taste_vector,
                  top_artists=excluded.top_artists, top_genres=excluded.top_genres,
                  top_moods=excluded.top_moods, updated_at=excluded.updated_at""",
             (user_id, summary, _j(taste_vector), _j(top_artists), _j(top_genres),
-             _j(top_moods), _j([]), now_iso()),
+             _j(top_moods), now_iso()),
         )
 
 
@@ -677,4 +654,3 @@ def reset_runtime(user_id: str) -> None:
         conn.execute("delete from adoption_events where user_id=?", (user_id,))
         conn.execute("delete from bridge_cache where user_id=?", (user_id,))
         conn.execute("delete from missions where user_id=?", (user_id,))
-        conn.execute("delete from meta where key=?", (f"sim_offset_days:{user_id}",))

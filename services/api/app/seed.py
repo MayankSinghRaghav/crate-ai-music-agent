@@ -54,15 +54,13 @@ def seed() -> dict:
     personas = catalog.personas()
 
     # 1) embed + upsert catalog
-    vectors, vocab, mode = embed_tracks(tracks)
+    vectors, _vocab, mode = embed_tracks(tracks)
     emb_by_id: dict[str, list[float]] = {}
     track_by_id: dict[str, dict] = {}
     for t, v in zip(tracks, vectors):
         db.upsert_track(t, v)
         emb_by_id[t["id"]] = v
         track_by_id[t["id"]] = t
-    db.set_meta("embed_vocab", vocab)
-    db.set_meta("embed_mode", mode)
 
     # 2) users + history + taste profiles
     from .llm import taste_summary  # local import keeps Phase 1 deps tidy
