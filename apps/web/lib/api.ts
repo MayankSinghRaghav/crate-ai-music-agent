@@ -1,8 +1,10 @@
 import type {
   AdoptionMetrics,
   Action,
+  ChatTurn,
   DigResponse,
   GenreInfo,
+  InsightsAnswer,
   LoopResult,
   Mission,
   TasteProfile,
@@ -98,4 +100,8 @@ export const api = {
     fetch(`${API_BASE}/missions/${encodeURIComponent(userId)}`, {
       method: "DELETE",
     }).then(asJson<{ ok: boolean; ended: boolean }>),
+
+  // Insights grounded chat — answers only from the discovery backlog.
+  askInsights: (question: string, history: ChatTurn[]) =>
+    post("/insights/ask", { question, history }).then(asJson<InsightsAnswer>),
 };

@@ -50,3 +50,24 @@ input[type="range"].crate-dial::-moz-range-thumb {
   background: #2a2a2a;
   border-radius: 9999px;
 }
+
+/* Insights citation → theme-card flash (triggered from the chat panel) */
+.theme-flash {
+  animation: theme-flash 1.6s ease-out;
+}
+@keyframes theme-flash {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 185, 84, 0);
+  }
+  12% {
+    box-shadow: 0 0 0 3px rgba(29, 185, 84, 0.65);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-flash {
+    animation: none;
+    box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.55);
+  }
+}
