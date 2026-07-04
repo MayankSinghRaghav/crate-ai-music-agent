@@ -9,7 +9,7 @@ import { SuggestedQuestions } from "./SuggestedQuestions";
 
 const MAX_LEN = 500;
 
-export function InsightsChat() {
+export function InsightsChat({ themeCount }: { themeCount: number }) {
   const { messages, loading, send, clear } = useInsightsChat();
   const [input, setInput] = useState("");
   const listRef = useRef<HTMLDivElement | null>(null);
@@ -52,8 +52,8 @@ export function InsightsChat() {
             <span aria-hidden>✨</span> Ask the Insights
           </h2>
           <p className="mt-0.5 text-xs text-spotify-muted">
-            Answers are grounded only in the {`7`} discovery themes below — with
-            citations you can click.
+            Answers are grounded only in the {themeCount} discovery themes below —
+            with citations you can click.
           </p>
         </div>
         {hasMessages && (

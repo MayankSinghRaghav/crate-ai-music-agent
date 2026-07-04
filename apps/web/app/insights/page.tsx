@@ -96,7 +96,7 @@ export default function InsightsPage() {
 
       {/* ask the insights — grounded AI chat over the backlog below */}
       <section className="mt-10">
-        <InsightsChat />
+        <InsightsChat themeCount={themes.length} />
       </section>
 
       {/* sources */}
