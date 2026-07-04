@@ -6,6 +6,8 @@ import { AdoptionPanel } from "@/components/AdoptionPanel";
 import { ComfortDial } from "@/components/ComfortDial";
 import { DigCard } from "@/components/DigCard";
 import { FeedbackModal } from "@/components/FeedbackModal";
+import Link from "next/link";
+
 import { Logo } from "@/components/Logo";
 import { MissionPanel } from "@/components/MissionPanel";
 import { UserSwitcher } from "@/components/UserSwitcher";
@@ -200,6 +202,12 @@ export default function Home() {
       <header className="flex items-center justify-between">
         <Logo />
         <div className="flex items-center gap-2 text-xs">
+          <Link
+            href="/insights"
+            className="rounded-full border border-spotify-border bg-spotify-surface px-2.5 py-1 text-spotify-subtle transition hover:text-white"
+          >
+            Insights →
+          </Link>
           <span
             className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 ${
               apiDown

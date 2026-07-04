@@ -1,0 +1,218 @@
+[
+  {
+    "topic": "Discovery Algorithm",
+    "size": 20,
+    "cluster_ids": [
+      3
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Personalized music exploration beyond current tastes",
+    "segment": "Music enthusiasts seeking discovery and growth",
+    "research_question": "",
+    "keywords": [
+      "discover",
+      "artists",
+      "echo chamber",
+      "chamber",
+      "echo",
+      "weekly"
+    ],
+    "example_quotes": [
+      "When Discover Weekly actually nails it, it's pure magic and honestly the reason I pay for premium.",
+      "Discover Weekly has gone stale and repetitive. I never discover anything genuinely new from it anymore.",
+      "My discover weekly is stale. Every week it's the same vibe and the same handful of artists. I'm bored of it."
+    ],
+    "share": 0.206,
+    "opportunity_score": 20.0,
+    "rank": 1
+  },
+  {
+    "topic": "Discovery without retention",
+    "size": 17,
+    "cluster_ids": [
+      7
+    ],
+    "sentiment": "negative",
+    "unmet_need": "A feature to help users retain and revisit discovered music, turning it into a habit",
+    "segment": "Casual music enthusiasts with high intent but low retention",
+    "research_question": "",
+    "keywords": [
+      "new",
+      "sticks",
+      "forget",
+      "discovery",
+      "save",
+      "rotation"
+    ],
+    "example_quotes": [
+      "New music never sticks. I play something once and it's gone — it never enters my long-term rotation.",
+      "why do i save 10 songs off release radar and then never listen to them again. nothing ever sticks lol",
+      "High intent here — I open Discover Weekly, save a couple, then forget them. Nothing ever converts into a habit."
+    ],
+    "share": 0.175,
+    "opportunity_score": 17.0,
+    "rank": 2
+  },
+  {
+    "topic": "Adventurous Music Discovery",
+    "size": 15,
+    "cluster_ids": [
+      1
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Personalized music exploration that balances comfort and discovery",
+    "segment": "Music Enthusiasts Seeking Novelty",
+    "research_question": "",
+    "keywords": [
+      "want",
+      "days",
+      "safe",
+      "comfort",
+      "adventurous",
+      "days want"
+    ],
+    "example_quotes": [
+      "give me a dial for how adventurous my recs are. some days i want comfort, some days i want a real stretch",
+      "Good app but discovery recommends stuff so safe and cautious it's boring. I never find anything genuinely new.",
+      "A comfort-to-curiosity dial is genius. The biggest gap in every recommender is control over how far the recs stretch."
+    ],
+    "share": 0.155,
+    "opportunity_score": 15.0,
+    "rank": 3
+  },
+  {
+    "topic": "Transparent Music Recommendations",
+    "size": 14,
+    "cluster_ids": [
+      4
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Contextual and personalized music discovery that explains why a song was recommended",
+    "segment": "Casual and engaged music listeners seeking effortless and trustworthy music discovery",
+    "research_question": "",
+    "keywords": [
+      "trust",
+      "like",
+      "recommendations",
+      "don",
+      "song",
+      "new"
+    ],
+    "example_quotes": [
+      "Recommendations arrive with no context. Just tell me why this track fits my taste so I can trust it.",
+      "the recs never tell me WHY a song was picked. i don't trust a recommendation that comes with no reason",
+      "Recommendations never explain why a track was picked. I don't trust a suggestion that comes with no reason."
+    ],
+    "share": 0.144,
+    "opportunity_score": 14.0,
+    "rank": 4
+  },
+  {
+    "topic": "Effortless Music Discovery",
+    "size": 10,
+    "cluster_ids": [
+      0
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Personalized, low-effort music recommendations that fit existing tastes",
+    "segment": "Busy Parents",
+    "research_question": "",
+    "keywords": [
+      "new",
+      "music",
+      "just",
+      "zero",
+      "busy",
+      "want"
+    ],
+    "example_quotes": [
+      "as a busy parent i have zero time to crate dig. i just want good new music to come to me with no effort",
+      "Two kids, zero energy after work to look for music. I just fall back on the same comfort playlist on repeat.",
+      "Busy parents need zero-effort discovery that respects their time and comes to them instead of making them dig."
+    ],
+    "share": 0.103,
+    "opportunity_score": 10.0,
+    "rank": 5
+  },
+  {
+    "topic": "Discovery Stagnation",
+    "size": 8,
+    "cluster_ids": [
+      2
+    ],
+    "sentiment": "negative",
+    "unmet_need": "novel and relevant music recommendations that break the user out of their current listening routine",
+    "segment": "busy adults seeking musical discovery",
+    "research_question": "",
+    "keywords": [
+      "songs",
+      "stuck",
+      "repeat",
+      "app",
+      "rut",
+      "songs repeat"
+    ],
+    "example_quotes": [
+      "Stuck on repeat with the same comfort songs. The app never gently nudges me to expand my rotation.",
+      "stuck in a rut listening to the same songs on repeat and the algorithm refuses to break me out of the loop",
+      "Stuck-in-a-loop is so real. People fall back on the same songs on repeat; the product that breaks that rut wins."
+    ],
+    "share": 0.082,
+    "opportunity_score": 8.0,
+    "rank": 6
+  },
+  {
+    "topic": "Discovery Depth",
+    "size": 5,
+    "cluster_ids": [
+      6
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Access to obscure and deep-cut music recommendations",
+    "segment": "Power digger/Crate digger",
+    "research_question": "",
+    "keywords": [
+      "obscure",
+      "deep cuts",
+      "deep",
+      "cuts",
+      "power",
+      "want"
+    ],
+    "example_quotes": [
+      "Power digger here. I want deep cuts and obscure artists below a certain popularity, but the algorithm plays it way too safe.",
+      "Power user here, I want obscure deep cuts and the algorithm refuses to go below a certain popularity threshold. Discovery for nerds is broken.",
+      "I'm a power user who digs deep cuts and obscure artists below a certain popularity. Spotify's recommendations and discovery are far too cautious and safe for me."
+    ],
+    "share": 0.052,
+    "opportunity_score": 5.0,
+    "rank": 7
+  },
+  {
+    "topic": "Guided Genre Introduction",
+    "size": 8,
+    "cluster_ids": [
+      5
+    ],
+    "sentiment": "positive",
+    "unmet_need": "A gradual and structured approach to exploring new music genres",
+    "segment": "Casual music explorers",
+    "research_question": "",
+    "keywords": [
+      "week",
+      "ramp",
+      "guided",
+      "guided ramp",
+      "jazz",
+      "trying"
+    ],
+    "example_quotes": [
+      "trying to get into jazz but i keep bouncing off it. i need a guided on-ramp not a 5 hour playlist someone help",
+      "Guided genre missions — get into jazz over 3 weeks with a staged on-ramp — would be a game changer for beginners.",
+      "I keep trying to get into jazz but bounce off it every time. I need a guided on-ramp that eases me in week by week."
+    ],
+    "share": 0.082,
+    "opportunity_score": 2.0,
+    "rank": 8
+  }
+]
