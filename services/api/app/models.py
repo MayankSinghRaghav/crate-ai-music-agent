@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from typing import Literal, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 Surface = Literal["dig", "re-serve", "mission"]
 Action = Literal["served", "played", "skipped", "saved"]
@@ -150,3 +150,32 @@ class GenreInfo(BaseModel):
     genre: str
     tracks: int
     artists: int
+
+
+# --- Insights chat (grounded Q&A over the discovery backlog) ---
+Confidence = Literal["high", "medium", "low"]
+
+
+class ChatTurn(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str = Field(max_length=4000)
+
+
+class InsightsAskIn(BaseModel):
+    question: str = Field(min_length=1, max_length=500)
+    history: list[ChatTurn] = Field(default_factory=list)
+
+    @field_validator("question")
+    @classmethod
+    def _non_blank(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("question must not be blank")
+        return v
+
+
+class InsightsAnswer(BaseModel):
+    answer: str
+    citations: list[int] = []          # theme ranks the answer draws from
+    confidence: Confidence = "medium"
+    refused: bool = False              # true when unanswerable from the backlog

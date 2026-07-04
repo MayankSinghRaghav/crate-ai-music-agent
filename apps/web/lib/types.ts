@@ -121,3 +121,18 @@ export interface GenreInfo {
   tracks: number;
   artists: number;
 }
+
+// --- Insights chat (grounded Q&A over the discovery backlog) ---
+export type Confidence = "high" | "medium" | "low";
+
+export interface ChatTurn {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface InsightsAnswer {
+  answer: string;
+  citations: number[]; // theme ranks the answer draws from
+  confidence: Confidence;
+  refused: boolean;
+}

@@ -5,6 +5,7 @@
 // off a cache API only if the snapshot ever gets too big to ship in the bundle.
 import Link from "next/link";
 
+import { InsightsChat } from "@/components/insights/InsightsChat";
 import { Logo } from "@/components/Logo";
 import opportunities from "@/lib/opportunities.json";
 
@@ -93,6 +94,11 @@ export default function InsightsPage() {
         </div>
       </section>
 
+      {/* ask the insights — grounded AI chat over the backlog below */}
+      <section className="mt-10">
+        <InsightsChat themeCount={themes.length} />
+      </section>
+
       {/* sources */}
       <section className="mt-10">
         <h2 className="text-xs uppercase tracking-wide text-spotify-muted">
@@ -129,7 +135,8 @@ export default function InsightsPage() {
           {themes.map((t) => (
             <li
               key={t.rank}
-              className="rounded-xl border border-spotify-border bg-spotify-card p-5"
+              id={`theme-${t.rank}`}
+              className="scroll-mt-20 rounded-xl border border-spotify-border bg-spotify-card p-5"
             >
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="flex min-w-0 items-start gap-3">
