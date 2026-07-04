@@ -225,7 +225,7 @@ export default function Home() {
 
       {apiDown && (
         <div className="mt-4 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-200">
-          Can't reach the Crate API at <code>{api.base}</code>. Start it with{" "}
+          Can&apos;t reach the Crate API at <code>{api.base}</code>. Start it with{" "}
           <code>uvicorn app.main:app --port 8000</code> and seed via{" "}
           <code>POST /dev/seed</code>.
         </div>
