@@ -8,7 +8,9 @@ a fixtures loader so every source runs end-to-end offline on bundled samples.
 from __future__ import annotations
 
 import hashlib
+import html
 import json
+import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Protocol
@@ -56,6 +58,68 @@ def anon_author(name: str | None, prefix: str = "u") -> str:
     if not name:
         return f"{prefix}/anon"
     return f"{prefix}/" + hashlib.sha1(name.encode("utf-8")).hexdigest()[:8]
+
+
+# --------------------------------------------------------------- cleaning ---
+
+# Emoji / pictographs / dingbats / arrows / regional-indicator + variation
+# selectors — stripped so quotes read as plain prose.
+_EMOJI_RE = re.compile(
+    "["
+    "\U0001F000-\U0001FAFF"   # emoji & pictographs (incl. supplemental)
+    "\U00002600-\U000027BF"   # misc symbols + dingbats
+    "\U00002190-\U000021FF"   # arrows
+    "\U00002B00-\U00002BFF"   # misc symbols & arrows
+    "\U0001F1E6-\U0001F1FF"   # regional indicators (flags)
+    "\U0000FE00-\U0000FE0F"   # variation selectors
+    "\U00002000-\U0000206F"   # general punctuation (incl. zero-width joiners)
+    "\U00002700-\U000027BF"
+    "]+",
+    flags=re.UNICODE,
+)
+_URL_RE = re.compile(r"https?://\S+|www\.\S+")
+_WS_RE = re.compile(r"\s+")
+# social boilerplate that slips past the keyword relevance filter
+_GREETING_RE = re.compile(
+    r"\b(welcome to (the|our)|kia ora|good luck with|happy to have you|"
+    r"welcome aboard|nice to meet you)\b",
+    re.IGNORECASE,
+)
+
+
+def clean_text(text: str) -> str:
+    """Normalise raw review text for display + analysis.
+
+    Decodes HTML entities (``&nbsp;``, ``&amp;`` …), strips emoji, raw URLs, and
+    collapses whitespace. Safe to call on already-clean text (idempotent).
+    """
+    if not text:
+        return ""
+    t = html.unescape(text)          # &nbsp; -> \xa0, &amp; -> &, &#39; -> '
+    t = t.replace("\xa0", " ")        # non-breaking space -> plain space
+    t = _URL_RE.sub("", t)            # drop raw links
+    t = _EMOJI_RE.sub("", t)          # drop emoji / pictographs
+    return _WS_RE.sub(" ", t).strip()
+
+
+def is_quality_text(text: str, min_len: int = 20) -> bool:
+    """Keep only clean, English-dominant, non-boilerplate prose.
+
+    Drops fragments that are too short, predominantly non-Latin script (so a
+    largely non-English post doesn't become a 'representative quote'), or social
+    welcome/greeting chatter. Assumes ``clean_text`` has already run.
+    """
+    t = (text or "").strip()
+    if len(t) < min_len:
+        return False
+    letters = [c for c in t if c.isalpha()]
+    if letters:
+        non_latin = sum(1 for c in letters if ord(c) > 0x024F)  # beyond Latin Ext-B
+        if non_latin / len(letters) > 0.3:
+            return False
+    if _GREETING_RE.search(t):
+        return False
+    return True
 
 
 def is_relevant(text: str) -> bool:
