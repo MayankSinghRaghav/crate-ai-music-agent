@@ -37,6 +37,17 @@ def test_quality_drops_greeting_chatter():
     assert is_quality_text("Hi there, welcome to the Community, glad to have you here") is False
 
 
+def test_clean_strips_reply_prefix():
+    assert clean_text("Re: No green checkmarks in playlists") == "No green checkmarks in playlists"
+    assert clean_text("RE:  discovery is broken") == "discovery is broken"
+
+
+def test_quality_drops_forum_intro_and_promo():
+    # the exact junk from the dashboard screenshot
+    assert is_quality_text("Let's introduce ourselves! I discover tracks through playlists") is False
+    assert is_quality_text("Artists Wanted Edition 19 has over 60 artists to be discovered") is False
+
+
 def test_quality_drops_too_short():
     assert is_quality_text("great app") is False
 

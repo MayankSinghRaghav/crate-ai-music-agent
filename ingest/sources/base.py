@@ -79,10 +79,13 @@ _EMOJI_RE = re.compile(
 )
 _URL_RE = re.compile(r"https?://\S+|www\.\S+")
 _WS_RE = re.compile(r"\s+")
-# social boilerplate that slips past the keyword relevance filter
+# leading forum-reply / subject prefixes ("Re: ", "RE: ...")
+_REPLY_PREFIX_RE = re.compile(r"^(re|fw|fwd)\s*:\s*", re.IGNORECASE)
+# social / promo boilerplate that slips past the keyword relevance filter
 _GREETING_RE = re.compile(
-    r"\b(welcome to (the|our)|kia ora|good luck with|happy to have you|"
-    r"welcome aboard|nice to meet you)\b",
+    r"(welcome to (the|our)|kia ora|good luck with|happy to have you|"
+    r"welcome aboard|nice to meet you|let'?s introduce ourselves|"
+    r"artists wanted|let'?s go exploring|welcome!)",
     re.IGNORECASE,
 )
 
@@ -99,6 +102,7 @@ def clean_text(text: str) -> str:
     t = t.replace("\xa0", " ")        # non-breaking space -> plain space
     t = _URL_RE.sub("", t)            # drop raw links
     t = _EMOJI_RE.sub("", t)          # drop emoji / pictographs
+    t = _REPLY_PREFIX_RE.sub("", t.strip())  # drop leading "Re:" forum prefix
     return _WS_RE.sub(" ", t).strip()
 
 
