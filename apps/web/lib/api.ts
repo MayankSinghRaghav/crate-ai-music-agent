@@ -104,4 +104,10 @@ export const api = {
   // Insights grounded chat — answers only from the discovery backlog.
   askInsights: (question: string, history: ChatTurn[]) =>
     post("/insights/ask", { question, history }).then(asJson<InsightsAnswer>),
+
+  // Resolve a 30s audio preview for a track (null when none is available).
+  preview: (trackId: string) =>
+    fetch(`${API_BASE}/catalog/preview/${encodeURIComponent(trackId)}`).then(
+      asJson<{ track_id: string; preview_url: string | null }>
+    ),
 };

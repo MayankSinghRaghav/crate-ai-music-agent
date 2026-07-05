@@ -15,7 +15,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from . import adoption, agent, db, insights, mission
+from . import adoption, agent, db, insights, mission, previews
 from .config import log_startup_mode, settings
 from .llm import generate_bridge
 from .models import (
@@ -285,6 +285,15 @@ def feedback(body: FeedbackIn) -> dict:
 def catalog_genres() -> list[GenreInfo]:
     """Genres available for a Discovery Mission, with track/artist counts."""
     return [GenreInfo(**g) for g in db.genre_counts()]
+
+
+@app.get("/catalog/preview/{track_id}")
+def catalog_preview(track_id: str) -> dict:
+    """A 30s audio preview URL for the track (resolved via iTunes, cached), or
+    null when none is available. Best-effort — never errors on lookup failure."""
+    if not db.get_track(track_id):
+        raise HTTPException(404, "unknown track")
+    return {"track_id": track_id, "preview_url": previews.preview_url(track_id)}
 
 
 @app.post("/missions", response_model=Mission)

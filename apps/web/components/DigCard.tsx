@@ -1,11 +1,17 @@
 "use client";
 
+import { useRef, useState } from "react";
+
+import { api } from "@/lib/api";
 import type { Action, DigItem } from "@/lib/types";
 
 const SURFACE_BADGE: Record<string, { label: string; cls: string }> = {
   "re-serve": { label: "Back for round two", cls: "bg-amber-500/15 text-amber-300" },
   mission: { label: "Mission pick", cls: "bg-violet-500/15 text-violet-300" },
 };
+
+// Only one preview should sound at a time across all cards.
+let currentAudio: HTMLAudioElement | null = null;
 
 export function DigCard({
   item,
@@ -29,6 +35,53 @@ export function DigCard({
   const skipped = action === "skipped";
   const played = action === "played";
   const saved = action === "saved";
+
+  // audio preview state: undefined = not yet resolved, null = no preview found
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null | undefined>(
+    track.preview_url ?? undefined
+  );
+  const [playing, setPlaying] = useState(false);
+  const [loadingPreview, setLoadingPreview] = useState(false);
+
+  async function handlePlay() {
+    onPlay(); // always log the "played" signal (drives adoption metrics)
+
+    const el = audioRef.current;
+    if (!el) return;
+    if (playing) {
+      el.pause();
+      return;
+    }
+
+    // resolve the preview URL on first play
+    let url = previewUrl;
+    if (url === undefined) {
+      setLoadingPreview(true);
+      try {
+        url = (await api.preview(track.id)).preview_url;
+      } catch {
+        url = null;
+      } finally {
+        setPreviewUrl(url ?? null);
+        setLoadingPreview(false);
+      }
+    }
+    if (!url) return; // no preview — button already logged the play
+
+    if (currentAudio && currentAudio !== el) currentAudio.pause();
+    currentAudio = el;
+    el.src = url;
+    el.play().catch(() => setPlaying(false));
+  }
+
+  const playLabel = loadingPreview
+    ? "Loading…"
+    : playing
+    ? "Pause"
+    : played
+    ? "Play again"
+    : "Play";
 
   return (
     <div
@@ -80,15 +133,23 @@ export function DigCard({
 
       <div className="mt-3 flex items-center gap-2">
         <button
-          onClick={onPlay}
-          className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-            played
-              ? "bg-spotify-green text-black"
-              : "bg-spotify-green text-black hover:bg-spotify-greenDark"
-          }`}
+          onClick={handlePlay}
+          disabled={loadingPreview}
+          aria-label={playing ? "Pause preview" : "Play preview"}
+          className="flex items-center gap-1.5 rounded-full bg-spotify-green px-3 py-1.5 text-sm font-semibold text-black transition hover:bg-spotify-greenDark disabled:opacity-70"
         >
-          <span aria-hidden>▶</span> {played ? "Playing" : "Play"}
+          <span aria-hidden>{playing ? "⏸" : "▶"}</span> {playLabel}
         </button>
+        {previewUrl === null && (
+          <span className="text-[11px] text-spotify-muted">No 30-sec preview</span>
+        )}
+        <audio
+          ref={audioRef}
+          preload="none"
+          onPlay={() => setPlaying(true)}
+          onPause={() => setPlaying(false)}
+          onEnded={() => setPlaying(false)}
+        />
         <button
           onClick={onSave}
           className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition ${
