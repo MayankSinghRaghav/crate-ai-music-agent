@@ -179,3 +179,29 @@ class InsightsAnswer(BaseModel):
     citations: list[int] = []          # theme ranks the answer draws from
     confidence: Confidence = "medium"
     refused: bool = False              # true when unanswerable from the backlog
+
+
+class ClassifyIn(BaseModel):
+    review: str = Field(min_length=1, max_length=1000)
+
+    @field_validator("review")
+    @classmethod
+    def _non_blank(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("review must not be blank")
+        return v
+
+
+class Classification(BaseModel):
+    frustration_type: str
+    job_to_be_done: str
+    segment: str
+    intensity: Literal["low", "medium", "high"] = "medium"
+
+
+class InsightsSummary(BaseModel):
+    summary: str
+    themes_analysed: int = 0
+    reviews_analysed: int = 0
+    generated: bool = False            # true when written by the LLM (vs template)

@@ -19,9 +19,9 @@ from . import adoption, agent, db, insights, mission, previews
 from .config import log_startup_mode, settings
 from .llm import generate_bridge
 from .models import (
-    AdoptionMetrics, DigItem, DigResponse, EventIn, FeedbackIn, GenreInfo,
-    InsightsAnswer, InsightsAskIn, LoopResult, Mission, MissionCreateIn,
-    TasteProfile, User,
+    AdoptionMetrics, Classification, ClassifyIn, DigItem, DigResponse, EventIn,
+    FeedbackIn, GenreInfo, InsightsAnswer, InsightsAskIn, InsightsSummary,
+    LoopResult, Mission, MissionCreateIn, TasteProfile, User,
 )
 from .recommender import recommend
 from .seed import seed
@@ -340,3 +340,20 @@ def insights_ask(body: InsightsAskIn) -> InsightsAnswer:
             503, "The insights assistant is unavailable right now. Please try again."
         )
     return InsightsAnswer(**result)
+
+
+@app.post("/insights/classify", response_model=Classification)
+def insights_classify(body: ClassifyIn) -> Classification:
+    """Classify one review into frustration type · job-to-be-done · segment ·
+    intensity. Uses the configured LLM, falling back to a deterministic heuristic
+    so the tool always responds."""
+    return Classification(**insights.classify(body.review))
+
+
+@app.get("/insights/summary", response_model=InsightsSummary)
+def insights_summary() -> InsightsSummary:
+    """A synthesised 'core finding' over the discovery backlog."""
+    result = insights.core_finding()
+    if result is None:
+        raise HTTPException(503, "No discovery themes available.")
+    return InsightsSummary(**result)
