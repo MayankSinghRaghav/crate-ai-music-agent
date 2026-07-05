@@ -6,6 +6,7 @@
 import Link from "next/link";
 
 import { InsightsChat } from "@/components/insights/InsightsChat";
+import { RotatingQuotes } from "@/components/insights/RotatingQuotes";
 import { Logo } from "@/components/Logo";
 import opportunities from "@/lib/opportunities.json";
 
@@ -186,21 +187,7 @@ export default function InsightsPage() {
               )}
 
               {t.example_quotes.length > 0 && (
-                <div className="mt-4 border-l-2 border-spotify-green/40 pl-3">
-                  <p className="mb-1 text-[11px] uppercase tracking-wide text-spotify-muted">
-                    Representative quotes
-                  </p>
-                  <ul className="space-y-1.5">
-                    {t.example_quotes.map((q, i) => (
-                      <li
-                        key={i}
-                        className="text-sm italic leading-snug text-white/85"
-                      >
-                        &ldquo;{q}&rdquo;
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <RotatingQuotes quotes={t.example_quotes} />
               )}
             </li>
           ))}
