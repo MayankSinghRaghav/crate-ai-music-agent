@@ -15,13 +15,13 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from . import adoption, agent, db, insights, mission
+from . import adoption, agent, db, insights, mission, previews
 from .config import log_startup_mode, settings
 from .llm import generate_bridge
 from .models import (
-    AdoptionMetrics, DigItem, DigResponse, EventIn, FeedbackIn, GenreInfo,
-    InsightsAnswer, InsightsAskIn, LoopResult, Mission, MissionCreateIn,
-    TasteProfile, User,
+    AdoptionMetrics, Classification, ClassifyIn, DigItem, DigResponse, EventIn,
+    FeedbackIn, GenreInfo, InsightsAnswer, InsightsAskIn, InsightsSummary,
+    LoopResult, Mission, MissionCreateIn, TasteProfile, User,
 )
 from .recommender import recommend
 from .seed import seed
@@ -287,6 +287,15 @@ def catalog_genres() -> list[GenreInfo]:
     return [GenreInfo(**g) for g in db.genre_counts()]
 
 
+@app.get("/catalog/preview/{track_id}")
+def catalog_preview(track_id: str) -> dict:
+    """A 30s audio preview URL for the track (resolved via iTunes, cached), or
+    null when none is available. Best-effort — never errors on lookup failure."""
+    if not db.get_track(track_id):
+        raise HTTPException(404, "unknown track")
+    return {"track_id": track_id, "preview_url": previews.preview_url(track_id)}
+
+
 @app.post("/missions", response_model=Mission)
 def create_mission(body: MissionCreateIn) -> Mission:
     if not db.get_user(body.user_id):
@@ -331,3 +340,20 @@ def insights_ask(body: InsightsAskIn) -> InsightsAnswer:
             503, "The insights assistant is unavailable right now. Please try again."
         )
     return InsightsAnswer(**result)
+
+
+@app.post("/insights/classify", response_model=Classification)
+def insights_classify(body: ClassifyIn) -> Classification:
+    """Classify one review into frustration type · job-to-be-done · segment ·
+    intensity. Uses the configured LLM, falling back to a deterministic heuristic
+    so the tool always responds."""
+    return Classification(**insights.classify(body.review))
+
+
+@app.get("/insights/summary", response_model=InsightsSummary)
+def insights_summary() -> InsightsSummary:
+    """A synthesised 'core finding' over the discovery backlog."""
+    result = insights.core_finding()
+    if result is None:
+        raise HTTPException(503, "No discovery themes available.")
+    return InsightsSummary(**result)

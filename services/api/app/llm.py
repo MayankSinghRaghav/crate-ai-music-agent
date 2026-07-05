@@ -350,6 +350,57 @@ def answer_insights(
     )
 
 
+# -------------------------------------------------- review classifier ---
+
+FRUSTRATION_TYPES = [
+    "Repetitive / stuck in loop",
+    "Mood & context mismatch",
+    "Algorithm distrust",
+    "Paywall friction",
+    "Discovery effort / overwhelm",
+    "Other",
+]
+
+CLASSIFY_SYSTEM = (
+    "You classify a single Spotify user review about music discovery. Ground the "
+    "classification ONLY in the review text.\n"
+    f"`frustration_type` MUST be one of: {', '.join(FRUSTRATION_TYPES)}.\n"
+    "`intensity` MUST be one of: low, medium, high.\n"
+    '`job_to_be_done` is a short phrase for what the user is really trying to do. '
+    "`segment` is a short user-type label.\n"
+    'OUTPUT JSON only: {"frustration_type":"...","job_to_be_done":"...",'
+    '"segment":"...","intensity":"low|medium|high"}'
+)
+
+
+def classify_review(review: str) -> Optional[dict]:
+    """Classify one review via the configured LLM, or None in stub mode/failure."""
+    if settings.llm_stub:
+        return None
+    return _llm_json(CLASSIFY_SYSTEM, {"review": review}, max_tokens=200)
+
+
+# ------------------------------------------------------- core finding ---
+
+SUMMARY_SYSTEM = (
+    "You are a product analyst. Write a 2-3 sentence 'core finding' that "
+    "synthesises the most important discovery themes for a PM: what the biggest "
+    "problems are, roughly how much of the feedback they represent, and the "
+    "implication. Ground it ONLY in the provided themes. No preamble.\n"
+    'OUTPUT JSON only: {"summary":"<2-3 sentences>"}'
+)
+
+
+def summarize_themes(themes: list[dict]) -> Optional[str]:
+    """A synthesised core-finding sentence, or None in stub mode/failure."""
+    if settings.llm_stub or not themes:
+        return None
+    out = _llm_json(SUMMARY_SYSTEM, {"themes": themes}, max_tokens=250)
+    if out and out.get("summary"):
+        return _polish(str(out["summary"]))
+    return None
+
+
 # ----------------------------------------------------- mission planning ---
 
 MISSION_SYSTEM = (

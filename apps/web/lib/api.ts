@@ -2,9 +2,11 @@ import type {
   AdoptionMetrics,
   Action,
   ChatTurn,
+  Classification,
   DigResponse,
   GenreInfo,
   InsightsAnswer,
+  InsightsSummary,
   LoopResult,
   Mission,
   TasteProfile,
@@ -104,4 +106,18 @@ export const api = {
   // Insights grounded chat — answers only from the discovery backlog.
   askInsights: (question: string, history: ChatTurn[]) =>
     post("/insights/ask", { question, history }).then(asJson<InsightsAnswer>),
+
+  // Resolve a 30s audio preview for a track (null when none is available).
+  preview: (trackId: string) =>
+    fetch(`${API_BASE}/catalog/preview/${encodeURIComponent(trackId)}`).then(
+      asJson<{ track_id: string; preview_url: string | null }>
+    ),
+
+  // Classify a single review (frustration type · JTBD · segment · intensity).
+  classify: (review: string) =>
+    post("/insights/classify", { review }).then(asJson<Classification>),
+
+  // Synthesised "core finding" over the discovery backlog.
+  insightsSummary: () =>
+    fetch(`${API_BASE}/insights/summary`).then(asJson<InsightsSummary>),
 };

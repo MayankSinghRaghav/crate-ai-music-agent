@@ -16,15 +16,37 @@ from .config import settings
 from .dedupe import dedupe
 from .embed import embed
 from .sources import build_sources
+from .sources.base import clean_text, is_quality_text, is_relevant
 from .tag import tag_cluster
 
 logger = logging.getLogger("ingest.pipeline")
 
 SENTIMENT_WEIGHT = {"negative": 1.0, "mixed": 0.6, "positive": 0.25}
 
+# How many representative quotes to keep per theme. The dashboard shows a random
+# subset each load, so we store a pool to rotate through.
+QUOTES_PER_THEME = 8
 
-def _representative_quotes(docs, k: int = 3) -> list[str]:
-    return [d.text for d in sorted(docs, key=lambda d: len(d.text))[:k]]
+
+def _representative_quotes(docs, k: int = QUOTES_PER_THEME) -> list[str]:
+    """Pick up to `k` clean, distinct, readable quotes for a theme.
+
+    Text is already cleaned + quality-filtered upstream. We prefer readable,
+    medium-length quotes (nearest ~120 chars) and drop near-duplicates so the
+    rotating display has genuine variety.
+    """
+    seen: set[str] = set()
+    out: list[str] = []
+    for d in sorted(docs, key=lambda d: abs(len(d.text) - 120)):
+        t = d.text.strip()
+        key = t.lower()[:80]
+        if len(t) < 20 or key in seen:
+            continue
+        seen.add(key)
+        out.append(t)
+        if len(out) >= k:
+            break
+    return out
 
 
 def run_pipeline(limit: int = 200, source_names=None) -> dict:
@@ -38,6 +60,17 @@ def run_pipeline(limit: int = 200, source_names=None) -> dict:
         raw.extend(docs)
     if not raw:
         raise RuntimeError("sources returned no documents")
+
+    # clean every doc (decode HTML entities, strip emoji/URLs, collapse space)
+    # then drop off-topic / non-English / boilerplate chatter — one uniform pass
+    # so both live and fixture data land clean before embed/cluster/tag.
+    before = len(raw)
+    for d in raw:
+        d.text = clean_text(d.text)
+    raw = [d for d in raw if is_relevant(d.text) and is_quality_text(d.text)]
+    logger.info("clean+filter: %d -> %d docs (%d dropped)", before, len(raw), before - len(raw))
+    if not raw:
+        raise RuntimeError("no documents left after cleaning/relevance filter")
 
     # raw store
     raw_path = settings.out_dir / "raw.jsonl"
@@ -71,7 +104,13 @@ def run_pipeline(limit: int = 200, source_names=None) -> dict:
         m = by_topic[topic]
         m["size"] += len(docs)
         m["cluster_ids"].append(lab)
-        m["example_quotes"] = (m["example_quotes"] + _representative_quotes(docs))[:3]
+        merged, seen = [], set()
+        for q in m["example_quotes"] + _representative_quotes(docs):
+            key = q.lower()[:80]
+            if key not in seen:
+                seen.add(key)
+                merged.append(q)
+        m["example_quotes"] = merged[:QUOTES_PER_THEME]
         if sev.get(tag.get("sentiment"), 1) < sev.get(m["sentiment"], 1):
             m["sentiment"] = tag.get("sentiment")  # keep the most negative
         for kw in tag.get("keywords", []):
