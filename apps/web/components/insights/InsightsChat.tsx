@@ -49,11 +49,12 @@ export function InsightsChat({ themeCount }: { themeCount: number }) {
       <div className="flex items-start justify-between gap-3">
         <div>
           <h2 className="flex items-center gap-2 text-lg font-semibold">
-            <span aria-hidden>✨</span> Ask the Insights
+            <span aria-hidden>✨</span> Ask about your users
           </h2>
           <p className="mt-0.5 text-xs text-spotify-muted">
-            Answers are grounded only in the {themeCount} discovery themes below —
-            with citations you can click.
+            A chat assistant that answers from real user feedback. It only uses the{" "}
+            {themeCount} findings on this page, and every answer links back to where
+            it came from.
           </p>
         </div>
         {hasMessages && (
@@ -78,8 +79,8 @@ export function InsightsChat({ themeCount }: { themeCount: number }) {
         {!hasMessages && !loading ? (
           <div className="rounded-xl border border-dashed border-spotify-border p-4">
             <p className="text-sm text-spotify-subtle">
-              Ask about sentiment, segments, unmet needs, or which theme is the
-              biggest opportunity. Try one:
+              Not sure where to start? Ask anything about what your users are
+              saying — or tap one of these:
             </p>
             <div className="mt-3">
               <SuggestedQuestions onPick={submit} disabled={loading} />

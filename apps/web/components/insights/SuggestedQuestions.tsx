@@ -1,12 +1,12 @@
 "use client";
 
-// Grounded in what the dashboard can actually answer (sentiment, segments,
-// unmet needs, ranking) so the first click always yields a cited answer.
+// Plain-language questions the dashboard can actually answer from its themes,
+// so the first click always yields a cited answer.
 const SUGGESTIONS = [
-  "What's the #1 opportunity and why?",
-  "Which themes have negative sentiment?",
+  "What's the biggest thing users want?",
+  "What are people most frustrated about?",
   "What do power users struggle with?",
-  "Summarize the top 3 unmet needs.",
+  "What should we build first?",
 ];
 
 export function SuggestedQuestions({
