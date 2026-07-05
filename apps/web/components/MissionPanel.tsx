@@ -54,7 +54,7 @@ export function MissionPanel({
           Discovery Mission
         </p>
         <p className="mt-1 text-sm text-spotify-subtle">
-          Pick a genre and Crate plans a guided <span className="text-white">3-week
+          Pick a genre and Spotify plans a guided <span className="text-white">3-week
           on-ramp</span> — accessible entry points first, the real thing by week 3.
         </p>
 

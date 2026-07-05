@@ -61,7 +61,7 @@ const coreFallback = topThemes.length
   : "No discovery themes are available yet.";
 
 export const metadata = {
-  title: "Discovery Insights — Crate",
+  title: "Discovery Insights — Spotify",
   description: "Ranked opportunity backlog from 7 public review sources.",
 };
 
@@ -91,7 +91,7 @@ export default function InsightsPage() {
           across channels, clusters into themes, and tags each with{" "}
           <span className="text-white">topic · sentiment · unmet-need · segment</span>{" "}
           — producing the ranked backlog of opportunities below. #1 theme is
-          exactly Crate&apos;s founding thesis.
+          exactly the discovery problem this product sets out to solve.
         </p>
 
         {/* headline stats */}
@@ -210,11 +210,6 @@ export default function InsightsPage() {
           ))}
         </ol>
       </section>
-
-      <p className="mt-10 text-center text-[11px] text-spotify-muted">
-        Raw pipeline: <code>ingest/</code> · snapshot committed to{" "}
-        <code>ingest/snapshots/opportunities-latest.json</code>
-      </p>
     </main>
   );
 }

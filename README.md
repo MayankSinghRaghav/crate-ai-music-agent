@@ -10,7 +10,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs&logoColor=white)
 ![Groq](https://img.shields.io/badge/LLM-Groq_free_tier-F55036?logo=groq&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-51_passing-1DB954)
+![Tests](https://img.shields.io/badge/tests-107_passing-1DB954)
 ![Phases](https://img.shields.io/badge/build_plan-phases_0--10_complete-1DB954)
 
 </div>
@@ -34,7 +34,11 @@
 | ⭐ | **North Star — Adoption Rate** | The metric that *is* the product. A **time-simulation** endpoint makes 3 weeks demonstrable in one click. |
 | 🧭 | **Discovery Missions** | *"Get me into **jazz** over 3 weeks."* The agent plans a staged on-ramp (accessible → deep), weaves picks into your dig, tracks progress, and **celebrates** adoption. |
 | 🛡️ | **Metrics + guardrail** | A live *surfaced → tried → adopted* funnel. Skip a lot, and the guardrail eases the dial back toward safer picks. |
-| 🔍 | **AI Review Discovery Engine** | A 7-source pipeline that mines public reviews into a ranked **opportunity backlog** — the evidence behind the thesis. |
+| 🔍 | **AI Review Discovery Engine** | A 7-source pipeline that mines public reviews into a ranked **opportunity backlog** — the evidence behind the thesis. Reviews are cleaned (HTML entities · emoji · non-English/boilerplate stripped) and quotes rotate on each visit. |
+| 💬 | **Ask about your users** | A grounded chat over the backlog — answers only from the mined themes, with clickable citations back to each source theme. |
+| 🏷️ | **Live Review Classifier** | Paste any review → the AI tags **frustration type · job-to-be-done · segment · intensity** in real time. |
+| 📌 | **Core Finding** | A synthesised top-line takeaway auto-written over the backlog, so the "so what" is instant. |
+| 🔊 | **30-second previews** | Play a dig track and hear a real preview (resolved via the keyless iTunes Search API), with a graceful fallback when none exists. |
 
 ---
 
@@ -184,11 +188,11 @@ Copy `.env.example` → `.env`. Generative text upgrades from deterministic stub
 ## 🧪 Tests
 
 ```bash
-cd services/api && pytest          # 40: recommender, grounding, API, adoption, missions, metrics
-python -m pytest ingest/tests      # 11: source registry, fixtures, multi-source backlog (from repo root)
+cd services/api && pytest          # 87: recommender, grounding, API, adoption, missions, metrics, insights chat/classifier/summary, previews
+python -m pytest ingest/tests      # 20: source registry, fixtures, multi-source backlog, data cleaning (from repo root)
 ```
 
-**51 tests**, all offline in deterministic stub mode (forced via `conftest.py`) — no network, no keys.
+**107 tests**, all offline in deterministic stub mode (forced via `conftest.py`) — no network, no keys.
 
 ---
 
@@ -227,6 +231,6 @@ supabase/migrations/ Postgres schema (documented prod path)
 
 ## ✅ Status
 
-**All build-plan phases 0–10 complete & verified** — the demoable vertical slice (Today's Dig, comfort dial, adoption loop, North Star), **Discovery Missions** (Phase 7), the **metrics dashboard + engagement guardrail** (Phase 8), **delivery** (Dockerfile · Vercel · CI · one-command demo — Phase 9), and the **AI Review Discovery Engine** with **all 7 sources** (Phase 10). **51 tests green.**
+**All build-plan phases 0–10 complete & verified** — the demoable vertical slice (Today's Dig, comfort dial, adoption loop, North Star), **Discovery Missions** (Phase 7), the **metrics dashboard + engagement guardrail** (Phase 8), **delivery** (Dockerfile · Vercel · CI · one-command demo — Phase 9), and the **AI Review Discovery Engine** with **all 7 sources** (Phase 10). Plus an interactive Insights layer — **grounded chat, live review classifier, core-finding summary**, cleaned rotating quotes, and real 30-second previews. **107 tests green.**
 
 <div align="center"><sub>Built as a graduation project — a narrow, lovable MVP that proves one idea: discovery is only a win when it sticks.</sub></div>
