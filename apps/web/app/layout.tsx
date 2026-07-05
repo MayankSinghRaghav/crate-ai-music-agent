@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Crate — your AI crate-digger",
+  title: "Spotify — your AI crate-digger",
   description:
     "An AI music-discovery companion that optimises for adoption, not feed-scroll.",
 };

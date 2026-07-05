@@ -145,8 +145,8 @@ export function AdoptionPanel({
         </div>
         <p className="mt-1.5 text-[11px] text-spotify-muted">
           {guardrail
-            ? "Too many skips — Crate pulled your dial back toward Comfort for safer picks."
-            : "Keeps stretch in check: if you start skipping a lot, Crate eases the dial back."}
+            ? "Too many skips — Spotify pulled your dial back toward Comfort for safer picks."
+            : "Keeps stretch in check: if you start skipping a lot, Spotify eases the dial back."}
         </p>
       </div>
 
