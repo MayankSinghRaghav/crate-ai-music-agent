@@ -2,9 +2,11 @@ import type {
   AdoptionMetrics,
   Action,
   ChatTurn,
+  Classification,
   DigResponse,
   GenreInfo,
   InsightsAnswer,
+  InsightsSummary,
   LoopResult,
   Mission,
   TasteProfile,
@@ -110,4 +112,12 @@ export const api = {
     fetch(`${API_BASE}/catalog/preview/${encodeURIComponent(trackId)}`).then(
       asJson<{ track_id: string; preview_url: string | null }>
     ),
+
+  // Classify a single review (frustration type · JTBD · segment · intensity).
+  classify: (review: string) =>
+    post("/insights/classify", { review }).then(asJson<Classification>),
+
+  // Synthesised "core finding" over the discovery backlog.
+  insightsSummary: () =>
+    fetch(`${API_BASE}/insights/summary`).then(asJson<InsightsSummary>),
 };

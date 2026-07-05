@@ -5,7 +5,9 @@
 // off a cache API only if the snapshot ever gets too big to ship in the bundle.
 import Link from "next/link";
 
+import { CoreFinding } from "@/components/insights/CoreFinding";
 import { InsightsChat } from "@/components/insights/InsightsChat";
+import { LiveClassifier } from "@/components/insights/LiveClassifier";
 import { RotatingQuotes } from "@/components/insights/RotatingQuotes";
 import { Logo } from "@/components/Logo";
 import opportunities from "@/lib/opportunities.json";
@@ -48,6 +50,15 @@ const topSentiment = themes.reduce(
   (a, t) => ({ ...a, [t.sentiment]: (a[t.sentiment] || 0) + 1 }),
   {} as Record<string, number>
 );
+
+// deterministic "core finding" fallback (upgraded to an AI summary client-side)
+const topThemes = [...themes].sort((a, b) => a.rank - b.rank).slice(0, 2);
+const coreShare = Math.round(topThemes.reduce((s, t) => s + t.share, 0) * 100);
+const coreFallback = topThemes.length
+  ? `The top themes — ${topThemes
+      .map((t) => `“${t.topic}”`)
+      .join(" and ")} — together account for about ${coreShare}% of the discovery feedback, pointing to a shared need: ${topThemes[0].unmet_need}.`
+  : "No discovery themes are available yet.";
 
 export const metadata = {
   title: "Discovery Insights — Crate",
@@ -95,9 +106,15 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      {/* ask the insights — grounded AI chat over the backlog below */}
-      <section className="mt-10">
+      {/* core finding — synthesised top-line takeaway */}
+      <section className="mt-6">
+        <CoreFinding fallback={coreFallback} reviewsAnalysed={totalDocs} />
+      </section>
+
+      {/* interactive AI tools: grounded chat + live review classifier */}
+      <section className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <InsightsChat themeCount={themes.length} />
+        <LiveClassifier />
       </section>
 
       {/* sources */}

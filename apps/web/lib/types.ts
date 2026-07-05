@@ -136,3 +136,17 @@ export interface InsightsAnswer {
   confidence: Confidence;
   refused: boolean;
 }
+
+export interface Classification {
+  frustration_type: string;
+  job_to_be_done: string;
+  segment: string;
+  intensity: "low" | "medium" | "high";
+}
+
+export interface InsightsSummary {
+  summary: string;
+  themes_analysed: number;
+  reviews_analysed: number;
+  generated: boolean;
+}
