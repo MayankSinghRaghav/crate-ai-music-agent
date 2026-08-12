@@ -1,226 +1,132 @@
 [
   {
-    "topic": "Recommendations lack a 'why'",
-    "size": 92,
+    "topic": "No guided on-ramp into a new genre",
+    "size": 137,
     "cluster_ids": [
-      6,
-      5
-    ],
-    "sentiment": "mixed",
-    "unmet_need": "A clear bridge explaining why a track fits your existing taste",
-    "segment": "Aspirational explorer",
-    "research_question": "Q2 recommendation frustrations",
-    "keywords": [
-      "like",
-      "song",
-      "playlist",
-      "new",
-      "recommendations",
-      "trust"
-    ],
-    "example_quotes": [
-      "Honestly when a recommendation explains why a track fits my taste, I trust it so much more. The 'why' is everything.",
-      "trying to get into jazz but i keep bouncing off it. i need a guided on-ramp not a 5 hour playlist someone help",
-      "Grounded 'why this' bridges build trust. Recommendations without a reason feel random and I never act on them.",
-      "Recommendations feel random and disconnected from my taste. There's no thread connecting the new song to what I actually listen to.",
-      "Recommendations never explain why a track was picked. I don't trust a suggestion that comes with no reason.",
-      "Can we get better tools to actually explore? Genre radio all sounds the same and the recommendations never push me anywhere genuinely new.",
-      "the recs never tell me WHY a song was picked. i don't trust a recommendation that comes with no reason",
-      "Recommendations never explain themselves. If it just said why I'd trust it. Without a bridge to my taste it all feels like noise I scroll past."
-    ],
-    "share": 0.5,
-    "opportunity_score": 55.2,
-    "rank": 1
-  },
-  {
-    "topic": "Recommendations recycle the familiar (echo chamber)",
-    "size": 16,
-    "cluster_ids": [
-      2
-    ],
-    "sentiment": "negative",
-    "unmet_need": "Genuinely novel recommendations that expand taste, not reinforce it",
-    "segment": "Power digger",
-    "research_question": "Q2 recommendation frustrations",
-    "keywords": [
-      "want",
-      "days",
-      "artists",
-      "echo",
-      "echo chamber",
-      "chamber"
-    ],
-    "example_quotes": [
-      "Please add a slider to control how adventurous the recommendations are. Some days I want comfort, some days a real stretch.",
-      "A comfort-to-curiosity dial is genius. The biggest gap in every recommender is control over how far the recs stretch.",
-      "Power digger here. I want deep cuts and obscure artists below a certain popularity, but the algorithm plays it way too safe.",
-      "The algorithm is too cautious. I'd love a slider for how adventurous the recommendations are, from safe to totally out there.",
-      "The algorithm is an echo chamber. It reinforces what I already play instead of expanding my taste into new artists.",
-      "Same here. The algorithm keeps recommending the same five artists over and over. It feels like an echo chamber, not discovery.",
-      "I just want a control slider comfort versus curiosity instead of a fixed algorithm deciding how adventurous I get.",
-      "spotify discover weekly is just my own playlist read back to me at this point. same artists every single week, total echo chamber"
-    ],
-    "share": 0.087,
-    "opportunity_score": 16.0,
-    "rank": 2
-  },
-  {
-    "topic": "Discovery is too high-effort / overwhelming",
-    "size": 20,
-    "cluster_ids": [
+      5,
       4
     ],
     "sentiment": "mixed",
-    "unmet_need": "Low-effort discovery that comes to you and respects your time",
+    "unmet_need": "Staged, goal-based exploration that coaches you into a genre",
     "segment": "Time-poor (busy parent)",
-    "research_question": "Q1 / Q5 effort & segments",
+    "research_question": "Q3 listening behaviours users want",
     "keywords": [
-      "discovery",
       "new",
       "want",
       "just",
-      "songs",
-      "effort"
+      "listen",
+      "song",
+      "music"
     ],
     "example_quotes": [
-      "As a busy parent with two kids I have no time or energy to crate dig. I just want low-effort discovery that comes to me.",
+      "hi. awesome i just wish instead of immediately playing a song that you just added that it would cycle through the playlist",
       "I have ADHD and the firehose of new releases is completely overwhelming. Discovery is way too high-effort to keep up with.",
-      "The killer feature would be adoption tracking. Most discovery never converts into a lasting habit a first play is not a win.",
+      "A comfort-to-curiosity dial is genius. The biggest gap in every recommender is control over how far the recs stretch.",
+      "Power digger here. I want deep cuts and obscure artists below a certain popularity, but the algorithm plays it way too safe.",
+      "Honestly when a recommendation explains why a track fits my taste, I trust it so much more. The 'why' is everything.",
+      "The algorithm is too cautious. I'd love a slider for how adventurous the recommendations are, from safe to totally out there.",
       "Discovery is a one shot thing. There's no sense of progress, no goal, no feeling that I'm actually growing my taste over time.",
-      "My problem is retention not discovery. I find cool new artists constantly, I just never build a lasting habit around any of them.",
-      "Good app but discovery recommends stuff so safe and cautious it's boring. I never find anything genuinely new.",
-      "Busy parents need zero-effort discovery that respects their time and comes to them instead of making them dig.",
-      "Honestly I listen to the same 50 songs on repeat. I want new music but I have zero energy to go looking for it after work and kids."
+      "I just want a control slider comfort versus curiosity instead of a fixed algorithm deciding how adventurous I get."
     ],
-    "share": 0.109,
+    "share": 0.561,
+    "opportunity_score": 82.2,
+    "rank": 1
+  },
+  {
+    "topic": "Discovery surfaces don't lead anywhere new",
+    "size": 73,
+    "cluster_ids": [
+      1,
+      0
+    ],
+    "sentiment": "mixed",
+    "unmet_need": "Discovery that introduces artists you'd never have found yourself",
+    "segment": "Aspirational explorer",
+    "research_question": "Q1 why discovery struggles",
+    "keywords": [
+      "artists",
+      "discover",
+      "weekly",
+      "discover weekly",
+      "songs",
+      "week"
+    ],
+    "example_quotes": [
+      "I'd love a guided on-ramp to get into classical. Stage it for me week by week instead of one giant intimidating playlist.",
+      "Same here. The algorithm keeps recommending the same five artists over and over. It feels like an echo chamber, not discovery.",
+      "discover weekly used to find me artists i'd never have found myself. now it's all safe picks i already know. discovery is broken",
+      "I open Discover Weekly, save a couple songs, and forget them by next week. High intent, nothing sticks. Story of my Spotify life.",
+      "My problem is retention not discovery. I find cool new artists constantly, I just never build a lasting habit around any of them.",
+      "spotify discover weekly is just my own playlist read back to me at this point. same artists every single week, total echo chamber",
+      "This is exactly my problem Discover Weekly recycles the familiar. It's an echo chamber of the same five artists I already follow.",
+      "My discover weekly is stale. Every week it's the same vibe and the same handful of artists. I'm bored of it."
+    ],
+    "share": 0.299,
+    "opportunity_score": 43.8,
+    "rank": 2
+  },
+  {
+    "topic": "Stuck in a listening loop / same songs on repeat",
+    "size": 12,
+    "cluster_ids": [
+      3
+    ],
+    "sentiment": "negative",
+    "unmet_need": "Gentle nudges that expand the rotation without losing comfort",
+    "segment": "Aspirational explorer",
+    "research_question": "Q4 repeat-listening of the same content",
+    "keywords": [
+      "stuck",
+      "songs",
+      "app",
+      "loop",
+      "repeat",
+      "rotation"
+    ],
+    "example_quotes": [
+      "As an aspirational explorer I save tons of new music and forget all of it. Retention and rotation are the real unmet need.",
+      "The same 50 songs on repeat problem is so real. I love them but I'm in a loop and the app does nothing to gently expand it.",
+      "Laggy. Extremely laggy app all of a sudden, music transitions are stuck on 15s and DJ cant stop looping the same damn songs.",
+      "the app runs very slow even on a new device it lags and gets stuck on pages 0/10 don't pay for this hot dog waste",
+      "Stuck-in-a-loop is so real. People fall back on the same songs on repeat; the product that breaks that rut wins.",
+      "stuck in a rut listening to the same songs on repeat and the algorithm refuses to break me out of the loop",
+      "I used to crate dig for hours. After kids I just loop the same comfort songs. I miss discovering but the effort barrier is too high now.",
+      "Stuck on repeat with the same comfort songs. The app never gently nudges me to expand my rotation."
+    ],
+    "share": 0.049,
     "opportunity_score": 12.0,
     "rank": 3
   },
   {
     "topic": "New music never sticks (discovery without adoption)",
-    "size": 15,
+    "size": 22,
     "cluster_ids": [
-      7
+      2
     ],
-    "sentiment": "mixed",
+    "sentiment": "positive",
     "unmet_need": "Reinforcement that converts a first play into a lasting habit",
-    "segment": "Aspirational explorer",
+    "segment": "Time-poor (busy parent)",
     "research_question": "Q4 / core: adoption, not one-off plays",
     "keywords": [
-      "week",
-      "new",
-      "forget",
-      "sticks",
-      "save",
-      "rotation"
-    ],
-    "example_quotes": [
-      "I'd love a guided on-ramp to get into classical. Stage it for me week by week instead of one giant intimidating playlist.",
-      "As an aspirational explorer I save tons of new music and forget all of it. Retention and rotation are the real unmet need.",
-      "I keep trying to get into jazz but bounce off it every time. I need a guided on-ramp that eases me in week by week.",
-      "I open Discover Weekly, save a couple songs, and forget them by next week. High intent, nothing sticks. Story of my Spotify life.",
-      "New music never sticks for me. I play a recommended song once and forget it it never makes it into my rotation.",
-      "I save songs off Release Radar every week and forget them by the next. Nothing ever sticks into my rotation discovery without adoption.",
-      "I wish there was a way to commit to getting into one new genre and have the app coach me through it week by week with progress I can see.",
-      "why do i save 10 songs off release radar and then never listen to them again. nothing ever sticks lol"
-    ],
-    "share": 0.082,
-    "opportunity_score": 9.0,
-    "rank": 4
-  },
-  {
-    "topic": "Stuck in a listening loop / same songs on repeat",
-    "size": 7,
-    "cluster_ids": [
-      0
-    ],
-    "sentiment": "negative",
-    "unmet_need": "Gentle nudges that expand the rotation without losing comfort",
-    "segment": "General listener",
-    "research_question": "Q4 repeat-listening of the same content",
-    "keywords": [
-      "stuck",
-      "songs",
-      "repeat",
+      "good",
       "app",
-      "rut",
-      "songs repeat"
-    ],
-    "example_quotes": [
-      "The same 50 songs on repeat problem is so real. I love them but I'm in a loop and the app does nothing to gently expand it.",
-      "Stuck listening to the same 50 songs on repeat. The app never nudges me out of my comfort playlist, so I'm in a rut.",
-      "Stuck-in-a-loop is so real. People fall back on the same songs on repeat; the product that breaks that rut wins.",
-      "stuck in a rut listening to the same songs on repeat and the algorithm refuses to break me out of the loop",
-      "Stuck on repeat with the same comfort songs. The app never gently nudges me to expand my rotation.",
-      "Why does every recommended playlist sound the same as my current rotation? I feel stuck in a rut and the app is not helping me break out of it.",
-      "I want to break out of my rut but every recommendation sounds exactly like my current rotation. The app keeps me stuck instead of helping me grow."
-    ],
-    "share": 0.038,
-    "opportunity_score": 7.0,
-    "rank": 5
-  },
-  {
-    "topic": "Discovery surfaces don't lead anywhere new",
-    "size": 23,
-    "cluster_ids": [
-      3
-    ],
-    "sentiment": "positive",
-    "unmet_need": "Discovery that introduces artists you'd never have found yourself",
-    "segment": "Time-poor (busy parent)",
-    "research_question": "Q1 why discovery struggles",
-    "keywords": [
-      "discover",
-      "weekly",
-      "discover weekly",
-      "genre",
-      "issue",
-      "artists"
-    ],
-    "example_quotes": [
-      "discover weekly used to find me artists i'd never have found myself. now it's all safe picks i already know. discovery is broken",
-      "Guided genre missions get into jazz over 3 weeks with a staged on-ramp would be a game changer for beginners.",
-      "My discover weekly is stale. Every week it's the same vibe and the same handful of artists. I'm bored of it.",
-      "Discover Weekly used to be magic, now it just feeds me songs I already have saved. I never actually discover anything new from it anymore.",
-      "navigation issues with a newer device. swiping left and right through playlists is a chore. scrolls up and down rather than left or right.",
-      "When Discover Weekly actually nails it, it's pure magic and honestly the reason I pay for premium.",
-      "Discover Weekly used to be magic, now it's the same five artists I already follow. The recommendations feel like a reminder feed of my own taste.",
-      "Genre exploration is intimidating. I'd pay for something that holds my hand into a new genre gradually and celebrates when I actually stick with an artist."
-    ],
-    "share": 0.125,
-    "opportunity_score": 5.75,
-    "rank": 6
-  },
-  {
-    "topic": "Users want control over adventurousness",
-    "size": 11,
-    "cluster_ids": [
-      1
-    ],
-    "sentiment": "positive",
-    "unmet_need": "A comfort-to-curiosity control over how far recommendations stretch",
-    "segment": "Time-poor (busy parent)",
-    "research_question": "Q2 recommendation frustrations",
-    "keywords": [
-      "ai",
       "music",
-      "spotify",
-      "artists",
-      "generated",
-      "songs"
+      "recommend",
+      "like",
+      "love"
     ],
     "example_quotes": [
-      "How can you report fake AI artists?. This is not a solution, so you shouldn't mark it as solved. Discover Weekly is feeding me AI music clearly stolen from human artists and you have no platform solve - this is unacceptable.",
-      "How can you report fake AI artists?. I do not like apple music, but at this point when I can't listen to my discover weekly without having to block artists every other song I'm actually going to try it out again. Please give us a way to report AI music.",
-      "Mark / Disable AI Generated Songs. Literally do not discover music anymore because it's not worth investigating every single new artist to make sure they're real f****** humans. Will be switching to a platform that has a stricter AI policy at the end of my subscription, maybe sooner",
-      "Mark / Disable AI Generated Songs. I'm about to cancelling too. No more new music for me, 24 of 30 'Weekly discover' songs created with AI. Marking as 'not my taste' and removal does nothing, same sh....'music' again and again shows up. Spotify, greedy corporation , did not want pay to the artists.... That was suspected and clear for users, apparently not for the management. I'm about to open short sale on their stock, expecting low number of new user purchasing subscription and massive quit existing users. Some people will make a lot of money on your greedy , dear Spotify !",
-      "Mark / Disable AI Generated Songs. there are several AI generated songs currently showing up on the profile of kpop group UNIS. not only that, one of them popped up in my home page as a NEW RELEASE recommendation, something that is usually reserved for recent drops by artists i listen to a lot. How is this allowed??? Not only for spotify to allow fake songs to be added to a legitimate artists profile, but for the songs to be pushed onto the home page of listeners? Ive NEVER listened to ai music and this wouldnt have come up on my page naturally due to algorithm. You are making your own app unusable. FIX IT",
-      "Mark / Disable AI Generated Songs. Well Tidal had previously announced they were going to clearly label AI music and not allow it to be monetized, and now they're letting me filter all AI music out of my search results and suggestions entirely. Meanwhile Spotify has doubled down on their inclusion of AI music on the platform. I was trying Tidal out to see if it worked well enough for my uses and now? 100% switching over. Goodbye, Spotify, I will miss your excellent recommendation engine. Thanks for introducing me to some of my favorite artists. Here's hoping I find a new way to solve that problem because it won't be with you. Man it's been like 6 years on that family plan as well",
-      "Give Users More Control Over AI Music Recommendations. As AI-generated music becomes more common on Spotify, users should have more control over how it affects their recommendations. Instead of simply blocking AI-generated music, Spotify could introduce a personalized AI music preference. Users could choose to prioritize human-made music, include AI-generated music normally, or have a balanced mix of both. Spotify could also clearly label when a song contains AI-generated content and, when possible, indicate how much AI was involved in its creation. This would give listeners more transparency and control over their recommendations while still allowing them to discover new music. It would also make the recommendation system feel more personalized and trustworthy",
-      "Spotify Web API for AI-Powered Music Discovery & Artist Intelligence. Hi everyone, I'm currently building an AI-powered music discovery platform and wanted to ask whether the Spotify Web API can support this use case, or if there are any additional APIs or partner solutions available. The goal is to use AI agents to analyze Spotify's music ecosystem by accessing structured data such as artist profiles, genres, related artists, releases, tracks, playlists, popularity metrics, and any available location or metadata. The platform is intended to help users discover artists, identify emerging music scenes, explore genre relationships, and generate intelligent recommendations based on publicly available Spotify data. I'd appreciate any guidance on the capabilities and limitations of the Spotify Web API for this type of application, as well as recommendations for best practices or alternative approaches if certain data isn't available through the standard developer APIs. Thank you in advance for any advice or direction. Plan: Premium Country: Malta / Germany Device: iPhone, MacBook Pro Operating System: iOS, macOS"
+      "Loading sucks. I love the app, but I cant give it a good rating until my podcast refreshed to the top of the page",
+      "I Really Enjoy. I like how its easy to pick out different artist out ! Love It ! Keep doing it ! Thank you",
+      "It is pretty good. Its is good but I just dont like how u have to get primame to not have it on shuffle",
+      "OMG THIS IS THE BEST MUSIC APP OF ALL TIME!!!!. Amazing quality!!! I RECOMMEND TO EVERYONE!!!!!!",
+      "Spotify. There are no ads and you can choose your own music. Its really good recommend it",
+      "seriously love this even with ads! it's the easiest to make playlists for me at least!!",
+      "Its good. I can watch videos listen to podcast and play great music I recommend it (but if your a kid dont tell your parents the app lets you watch videos).",
+      "very satisfied with the product and recommend it to anyone that loves music!!!"
     ],
-    "share": 0.06,
-    "opportunity_score": 2.75,
-    "rank": 7
+    "share": 0.09,
+    "opportunity_score": 5.5,
+    "rank": 4
   }
 ]
